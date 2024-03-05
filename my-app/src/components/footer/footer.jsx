@@ -1,12 +1,14 @@
 import React from 'react';
 import Iframe from 'react-iframe';
 
+import Logo from '../../assets/logo.png';
+
 const Footer = () => {
     return (
-        <footer>
+        <footer className='flex'>
             <div>
-                <div className="logo"></div>
-                <p className="text-3xl font-bold underline">Hotline: 0896565123</p>
+                <div className="logo"><img src={Logo} alt="" /></div>
+                <p className="">Hotline: 0896565123</p>
                 <p>Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
                 <p>Địa chỉ: Tầng 1, Thống Nhất Complex 82 Nguyễn Tuân, Thanh Xuân, Hà Nội.</p>
             </div>
