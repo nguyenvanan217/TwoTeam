@@ -1,9 +1,11 @@
-import './App.css';
+// import { Routes, Route } from 'react-router-dom';
 
+import './App.scss';
+import Navbar from './components/Navbar';
 function App() {
     return (
         <div className="App">
-            <h1>hello world</h1>
+            <Navbar />
         </div>
     );
 }
