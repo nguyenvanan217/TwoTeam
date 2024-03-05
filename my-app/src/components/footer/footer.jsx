@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import Iframe from 'react-iframe';
 
 const Footer = () => {
@@ -20,7 +20,10 @@ const Footer = () => {
                     <li>Liên hệ</li>
                 </ul>
                 <h3>Kết nối với Anime Store:</h3>
-                <div className="search"><input type="text" placeholder="Email address" /><button>Gửi</button></div>
+                <div className="search">
+                    <input type="text" placeholder="Email address" />
+                    <button>Gửi</button>
+                </div>
             </div>
 
             <div>
@@ -46,7 +49,7 @@ const Footer = () => {
                 />
             </div>
         </footer>
-    )
-}
+    );
+};
 
 export default Footer;
