@@ -3,10 +3,10 @@ import { useState } from 'react';
 import { TiThMenu } from 'react-icons/ti';
 import { IoCloseSharp } from 'react-icons/io5';
 
-import Logo from '../assets/logo.png';
+import Logo from '../../assets/logo.png';
 import './Navbar.css';
 import { MenuItems } from './MenuItems';
-import bannervideo from '../assets/videobanner.mp4';
+import bannervideo from '../../assets/videobanner.mp4';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
