@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import { TiThMenu } from 'react-icons/ti';
 import { IoCloseSharp } from 'react-icons/io5';
 
@@ -6,14 +7,22 @@ import Logo from '../assets/logo.png';
 import './Navbar.css';
 import { MenuItems } from './MenuItems';
 import bannervideo from '../assets/videobanner.mp4';
+
 export default function Navbar() {
     const [open, setOpen] = useState(false);
+
+    useEffect(() => {
+        const video = document.getElementById('myVideo');
+        video.play();
+    }, []);
+
     const handleMenuToggle = () => {
         setOpen(!open);
     };
+
     return (
         <div className="video-background">
-            <video autoPlay loop >
+            <video id="myVideo" autoPlay loop muted>
                 <source src={bannervideo} type="video/mp4" />
             </video>
             <nav className="navbar">
