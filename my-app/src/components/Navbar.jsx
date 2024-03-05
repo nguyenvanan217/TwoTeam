@@ -3,7 +3,7 @@ import { TiThMenu } from 'react-icons/ti';
 import { IoCloseSharp } from 'react-icons/io5';
 
 import Logo from '../assets/logo.png';
-import './Navbar.scss';
+import './Navbar.css';
 import { MenuItems } from './MenuItems';
 import bannervideo from '../assets/videobanner.mp4';
 export default function Navbar() {
