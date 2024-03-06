@@ -1,55 +1,77 @@
 import React from 'react';
 import Iframe from 'react-iframe';
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaTiktok,
+    FaPinterestP,
+    FaYoutube,
+} from "react-icons/fa";
+import { MdNavigateNext } from "react-icons/md";
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo-anime-png-2-1400x359.png';
+import './Footer.css'
 
 const Footer = () => {
     return (
-        <footer className='container-maxWidth flex'>
-            <div className=''>
-                <div className="logo"><img src={Logo} alt="" /></div>
-                <p className="">Hotline: 0896565123</p>
-                <p>Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
-                <p>Địa chỉ: Tầng 1, Thống Nhất Complex 82 Nguyễn Tuân, Thanh Xuân, Hà Nội.</p>
-            </div>
+        <footer>
+            <main className='bg-[var(--background-footer)] py-[30px]'>
+                <div className='container-maxWidth flex text-[13.6px] text-white gap-[45px]'>
+                    <div className='max-w-[25%]'>
+                        <div className="logo"><img src={Logo} alt="" className=' w-[75%]' /></div>
+                        <p className="mb-[1.3em]">Hotline: 0896565123</p>
+                        <p className="mb-[1.3em]">Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
+                        <p className="mb-[1.3em]">Địa chỉ: Tầng 1, Thống Nhất Complex 82 Nguyễn Tuân, Thanh Xuân, Hà Nội.</p>
+                        <h3 className="pt-[1rem] text-[17px] font-[600]">Kết nối với Anime Store:</h3>
+                        <div className='flex gap-[3px] pt-[0.5rem]'>
+                            <span className='w-[33px] h-[33px] rounded-[50%] bg-[#3a589d] flex items-center justify-center text-[15px] hover:bg-[#446084] cursor-pointer transition-all duration-300 ease-in-out'><FaFacebookF /></span>
+                            <span className='w-[33px] h-[33px] rounded-[50%] bg-[#3b6994] flex items-center justify-center text-[15px] hover:bg-[#446084] cursor-pointer transition-all duration-300 ease-in-out'><FaInstagram /></span>
+                            <span className='w-[33px] h-[33px] rounded-[50%] bg-[#111111] flex items-center justify-center text-[15px] hover:bg-[#111111] cursor-pointer transition-all duration-300 ease-in-out'><FaTiktok /></span>
+                            <span className='w-[33px] h-[33px] rounded-[50%] bg-[#cb2320] flex items-center justify-center text-[15px] hover:bg-[#970000] cursor-pointer transition-all duration-300 ease-in-out'><FaPinterestP /></span>
+                            <span className='w-[33px] h-[33px] rounded-[50%] bg-[#c33223] flex items-center justify-center text-[15px] hover:bg-[#970000] cursor-pointer transition-all duration-300 ease-in-out'><FaYoutube /></span>
+                        </div>
 
-            <div>
-                <h3>Kết nối với Anime Store:</h3>
-                <ul>
-                    <li>Cửa hàng Anime Store</li>
-                    <li>Giới thiệu</li>
-                    <li>Tuyển dụng</li>
-                    <li>Liên hệ</li>
-                </ul>
-                <h3>Kết nối với Anime Store:</h3>
-                <div className="search">
-                    <input type="text" placeholder="Email address" />
-                    <button>Gửi</button>
+                    </div>
+
+                    <div className='w-[25%]'>
+                        <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Cửa Hàng Anime Store</h3>
+                        <ul>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Giới thiệu</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Tuyển dụng</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Liên hệ</li>
+                        </ul>
+                        <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Gửi e-mail cho chúng tôi</h3>
+                        <div className="search flex items-center">
+                            <input type="text" placeholder="Email address" className='px-4 p-[0.4rem]' />
+                            <button className='bg-[#970000] px-4 py-1 text-[17px] font-[600]'>Gửi</button>
+                        </div>
+                    </div>
+
+                    <div className='w-[25%]'>
+                        <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Hỗ trợ khách hàng:</h3>
+                        <ul>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Hướng dẫn mua hàng online</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách bảo hành</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách đổi trả</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách vận chuyển</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách bảo mật</li>
+                        </ul>
+                    </div>
+
+                    <div className='w-[25%]'>
+                        <Iframe
+                            url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.7534088056423!2d107.62642087491243!3d16.43734548429674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a186960ebc1f%3A0x4957e32358b9f2d3!2zMzgzIE5ndXnhu4VuIFThuqV0IFRow6BuaCwgVGjhu6d5IETGsMahbmcsIEjGsMahbmcgVGjhu6d5LCBUaOG7q2EgVGhpw6puIEh14bq_LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709646454474!5m2!1svi!2s"
+                            width="auto"
+                            height="280"
+                            style={{ border: 0 }}
+                            allowFullScreen=""
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade"
+                        />
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <h3>Hỗ trợ khách hàng:</h3>
-                <ul>
-                    <li>Hướng dẫn mua hàng online</li>
-                    <li>Chính sách bảo hành</li>
-                    <li>Chính sách đổi trả</li>
-                    <li>Chính sách vận chuyển</li>
-                    <li>Chính sách bảo mật</li>
-                </ul>
-            </div>
-
-            <div>
-                <Iframe
-                    url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.7534088056423!2d107.62642087491243!3d16.43734548429674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a186960ebc1f%3A0x4957e32358b9f2d3!2zMzgzIE5ndXnhu4VuIFThuqV0IFRow6BuaCwgVGjhu6d5IETGsMahbmcsIEjGsMahbmcgVGjhu6d5LCBUaOG7q2EgVGhpw6puIEh14bq_LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709646454474!5m2!1svi!2s"
-                    width="600"
-                    height="450"
-                    style={{ border: 0 }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                />
-            </div>
+            </main>
+            <div className='bg-[#1b2a3c] text-white flex items-center justify-center text-[12px] p-1'>© Bản quyền thuộc về TwoTeam | Cung cấp bởi A-T</div>
         </footer>
     );
 };
