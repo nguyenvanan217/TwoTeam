@@ -58,7 +58,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='w-[25%] max-sm:hidden'>
+                    <div className='w-[25%] max-md:hidden max-sm:hidden '>
                         <Iframe
                             url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.7534088056423!2d107.62642087491243!3d16.43734548429674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a186960ebc1f%3A0x4957e32358b9f2d3!2zMzgzIE5ndXnhu4VuIFThuqV0IFRow6BuaCwgVGjhu6d5IETGsMahbmcsIEjGsMahbmcgVGjhu6d5LCBUaOG7q2EgVGhpw6puIEh14bq_LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709646454474!5m2!1svi!2s"
                             width="auto"

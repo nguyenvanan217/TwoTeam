@@ -22,10 +22,10 @@ const Trang_chu = () => {
                 </div>
 
                 <div className="banner-body flex gap-[20px]">
-                    <img src={BannerBody_1} alt="" className="object-cover w-[764px] h-[550px]" />
-                    <div className="flex flex-col gap-[20px]">
-                        <img src={BannerBody_2} className="w-[540px] h-[265px] object-cover" alt="" />
-                        <img src={BannerBody_3} className="w-[540px] h-[265px] object-cover" alt="" />
+                    <img src={BannerBody_1} alt="" className="object-cover w-[764px] h-[550px] max-md:hidden" />
+                    <div className="flex flex-col gap-[20px] max-md:flex-row max-sm:flex-auto">
+                        <img src={BannerBody_2} className="w-[540px] h-[265px] object-cover max-md:w-[100%]" alt="" />
+                        <img src={BannerBody_3} className="w-[540px] h-[265px] object-cover max-sm:hidden" alt="" />
                     </div>
                 </div>
             </div>
