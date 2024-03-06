@@ -10,7 +10,7 @@
     align-items: center;
     white-space: nowrap;
     padding: 20px 40px;
-    background-color: transparent;
+    background-color: white;
     backdrop-filter: blur(20px);
 }
 

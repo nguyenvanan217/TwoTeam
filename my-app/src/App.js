@@ -3,7 +3,7 @@
 import './App.css';
 import Navbar from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
-import Trang_chu from './pages/trang_chu/Trang_chu';
+import Trang_chu from './pages/Trang-chu/Trang_chu';
 function App() {
     return (
         <div className="App">
