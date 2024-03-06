@@ -29,7 +29,7 @@ li {
 }
 
 .nav-links {
-    color: #00c8ff;
+    color: #333;
     text-decoration: none;
     font-size: 20px;
 }
@@ -68,20 +68,20 @@ li {
         top: 0%;
         left: 100%;
         opacity: 0;
-        padding: 50px;
+        padding: 80px 50px 100% 20px;
         margin: 0;
         transition: all 0.4s ease;
     }
-    
+
     .nav-links {
         z-index: 1;
         color: #fff;
         margin-top: 20px;
         text-decoration: none;
         white-space: nowrap;
-        font-size: 20px;
+        font-size: 17px;
         width: 100%;
-        padding-bottom: 10px;
+        padding-bottom: 13px;
         border-bottom: 2px solid #333;
     }
 
