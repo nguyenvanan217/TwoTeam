@@ -3,12 +3,12 @@
 import './App.css';
 import Navbar from './components/header/Navbar';
 import Footer from './components/footer/Footer';
-import Banner from './components/Banner/Banner';
+import Trang_chu from './pages/trang_chu/Trang_chu';
 function App() {
     return (
         <div className="App">
             <Navbar />
-            <Banner/>
+            <Trang_chu/>
             <Footer />
         </div>
     );

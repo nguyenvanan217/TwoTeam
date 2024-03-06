@@ -16,8 +16,8 @@ const Footer = () => {
     return (
         <footer>
             <main className='bg-[var(--background-footer)] py-[30px]'>
-                <div className='container-maxWidth flex text-[13.6px] text-white gap-[45px]'>
-                    <div className='max-w-[25%]'>
+                <div className='container-maxWidth flex text-[13.6px] text-white gap-[45px] max-sm:flex-col max-sm:p-2'>
+                    <div className='w-[25%] max-sm:w-[100%]'>
                         <div className="logo"><img src={Logo} alt="" className=' w-[75%]' /></div>
                         <p className="mb-[1.3em]">Hotline: 0896565123</p>
                         <p className="mb-[1.3em]">Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
@@ -33,7 +33,7 @@ const Footer = () => {
 
                     </div>
 
-                    <div className='w-[25%]'>
+                    <div className='w-[25%] max-sm:w-[100%]'>
                         <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Cửa Hàng Anime Store</h3>
                         <ul>
                             <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Giới thiệu</li>
@@ -47,7 +47,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='w-[25%]'>
+                    <div className='w-[25%] max-sm:w-[100%]'>
                         <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Hỗ trợ khách hàng:</h3>
                         <ul>
                             <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Hướng dẫn mua hàng online</li>
@@ -58,7 +58,7 @@ const Footer = () => {
                         </ul>
                     </div>
 
-                    <div className='w-[25%]'>
+                    <div className='w-[25%] max-sm:hidden'>
                         <Iframe
                             url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.7534088056423!2d107.62642087491243!3d16.43734548429674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a186960ebc1f%3A0x4957e32358b9f2d3!2zMzgzIE5ndXnhu4VuIFThuqV0IFRow6BuaCwgVGjhu6d5IETGsMahbmcsIEjGsMahbmcgVGjhu6d5LCBUaOG7q2EgVGhpw6puIEh14bq_LCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1709646454474!5m2!1svi!2s"
                             width="auto"
