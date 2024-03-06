@@ -9,12 +9,6 @@ import { MenuItems } from './MenuItems';
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
-    // useEffect(() => {
-    //     const video = document.getElementById('myVideo');
-    //     video.play();
-    // }, []);
-
     const handleMenuToggle = () => {
         setOpen(!open);
     };

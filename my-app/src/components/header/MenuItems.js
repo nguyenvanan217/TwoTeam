@@ -5,23 +5,28 @@ export const MenuItems = [
         cName: 'nav-links',
     },
     {
-        title: 'Mô Hình Dragon Ball',
-        url: '/dragonball',
+        title: 'Mô Hình Anime',
+        url: '/mohinhanime',
         cName: 'nav-links',
     },
     {
-        title: 'Mô Hình KimeTsu',
-        url: '/kimetsu',
+        title: 'Tranh Canvas Anime',
+        url: '/tranhcanvas',
         cName: 'nav-links',
     },
     {
-        title: 'Mô Hình OnePiece',
-        url: '/onepiece',
+        title: 'Vải Decor Anime',
+        url: '/vaidecor',
         cName: 'nav-links',
     },
     {
-        title: 'Mô Hình OnePunchMan',
-        url: '/punchman',
+        title: 'Blog Giải Trí',
+        url: '/blog',
+        cName: 'nav-links',
+    },
+    {
+        title: 'Liên Hệ',
+        url: '/lienhe',
         cName: 'nav-links',
     },
 ];

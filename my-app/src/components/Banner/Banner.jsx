@@ -4,15 +4,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // import required modules
 import { Pagination } from 'swiper/modules';
 
-import Banner1 from '../assets/banner/banner-1.jpg';
-import Banner2 from '../assets/banner/banner-2.jpg';
+import Banner1 from '../../assets/banner/banner-1.jpg';
+import Banner2 from '../../assets/banner/banner-2.jpg';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-import './Home.css'
+import './Banner.css'
 
-const Home = () => {
+const Banner = () => {
     return (
         <main>
             <div className="banner">
@@ -35,4 +35,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Banner;
