@@ -20,7 +20,7 @@ export default function Navbar() {
     };
 
     return (
-        <nav className="navbar">
+        <nav className="navbar container-maxWidth">
             <div className="navbar-logo">
                 <a href="">
                     <img src={Logo} alt="" />

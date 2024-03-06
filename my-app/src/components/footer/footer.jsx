@@ -5,8 +5,8 @@ import Logo from '../../assets/logo.png';
 
 const Footer = () => {
     return (
-        <footer className='flex'>
-            <div>
+        <footer className='container-maxWidth flex'>
+            <div className=''>
                 <div className="logo"><img src={Logo} alt="" /></div>
                 <p className="">Hotline: 0896565123</p>
                 <p>Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
