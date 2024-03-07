@@ -91,7 +91,7 @@ li {
         opacity: 1;
         background-color: transparent;
         backdrop-filter: blur(20px);
-        width: 45%;
+        width: 50%;
         height: auto;
         background-color: #080808;
         z-index: 1;

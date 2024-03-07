@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --background-footer: #273647;
 }
@@ -14,4 +15,8 @@
 .container-maxWidth {
     max-width: 1320px;
     margin: 0px auto;
+}
+
+html {
+    scroll-behavior: smooth;
 }

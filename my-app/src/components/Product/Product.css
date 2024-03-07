@@ -1,3 +1,7 @@
+.sum-product {
+    background-color: #ffff;
+}
+
 .products {
     display: flex;
     margin: 0px auto;
@@ -37,20 +41,22 @@
 }
 
 .detail-button {
-    background-color: #3333;
+    background-color: black;
     padding: 8px 25px 8px 25px;
+    color: #fff;
 
 }
 
 .buy-button {
     padding: 8px 20px 8px 20px;
     background-color: #1E8DE8;
+    color: #fff;
 }
 
 .detail-button,
 .buy-button {
-    border-radius: 3px;
-    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
 }
 
 .detail-button:hover,
