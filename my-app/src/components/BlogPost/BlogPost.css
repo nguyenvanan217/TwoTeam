@@ -1,0 +1,9 @@
+.post_time::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 2px;
+    bottom: -8px;
+    left: 0;
+    background-color: #a60202;
+}

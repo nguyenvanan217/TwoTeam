@@ -1,13 +1,2 @@
-.post_time::before {
-    content: "";
-    position: absolute;
-    width: 33px;
-    height: 2px;
-    bottom: -8px;
-    left: 0;
-    background-color: #a60202;
-}
 
-.shadow-custom-color {
-    box-shadow: 0 4px 6px -1px rgba(77, 68, 68, 0.1), 0 2px 4px -1px rgba(70, 59, 59, 0.06);
-}
+
