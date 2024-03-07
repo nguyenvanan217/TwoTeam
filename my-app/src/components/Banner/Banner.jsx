@@ -15,7 +15,7 @@ import './Banner.css'
 
 const Banner = () => {
     return (
-        <div className="banner max-md:hidden">
+        <div className="banner">
             <Swiper
                 autoplay={{
                     delay: 10000,
