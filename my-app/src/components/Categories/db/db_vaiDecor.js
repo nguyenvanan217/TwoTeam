@@ -1,9 +1,9 @@
-import doflamingo from '../../assets/product/dofla.png';
-import age from '../../assets/product/age.png';
-import zoro from '../../assets/product/zoro.png';
-import mabu from '../../assets/product/mabu.jpg';
+import doflamingo from '../../../assets/product/dofla.png';
+import age from '../../../assets/product/age.png';
+import zoro from '../../../assets/product/zoro.png';
+import mabu from '../../../assets/product/mabu.jpg';
 
-export const ProductList = [
+export const db_vaiDecor     = [
     {
         avatar: doflamingo,
         title: 'Mô Hình Doflamindo',

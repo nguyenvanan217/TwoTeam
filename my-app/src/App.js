@@ -5,7 +5,7 @@ import Navbar from './components/Header/Navbar';
 import Footer from './components/Footer/Footer';
 import Product from './components/Product/Product';
 import ScrollToTopButton from './components/ScrollToTopButton/ScrollToTopButton';
-import TrangChu from './pages/trangChu/trangChu';
+import TrangChu from './pages/Trangchu/Trangchu';
 function App() {
     return (
         <div className="App">
