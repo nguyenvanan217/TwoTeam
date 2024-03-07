@@ -1,8 +1,5 @@
 import React from "react";
 
-import Review1 from '../../assets/review-user/NPA_4218.jpg'
-import Review2 from '../../assets/review-user/Toan-ca.jpg'
-import Review3 from '../../assets/review-user/NPA_3783.jpg'
 import './ReviewUsers.css'
 import { ReviewItems } from "./ReviewItems";
 import Title from '../Title/Title'

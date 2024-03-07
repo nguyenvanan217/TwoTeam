@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 
 import Product from "../Categories/Product";
-import ProductList from "../Categories/ProductList";
+import { db_topBanChay } from "../Categories/db/db_topBanChay";
+import { db_moHinhDep } from "../Categories/db/db_moHinhDep";
+import { db_tranhCanva } from "../Categories/db/db_tranhCanva";
+import { db_vaiDecor } from "../Categories/db/db_vaiDecor";
+import { db_setDecal } from "../Categories/db/db_setDecal";
 import { TabItems } from './TabItems'
 import './ProductTabs.css'
 
@@ -22,18 +26,13 @@ const ProductTabs = () => {
 
             </div>
             <div className="content-tabs p-7">
-                {/* map */}
-                {/* <div className={toggleState === 1 ? "active-content" : "content"}>
-                    <h2>Tab1</h2>
-                </div>
-                <div className={toggleState === 2 ? "active-content" : "content"}>
-                    <h2>Tab2</h2>
-                </div>
-                <div className={toggleState === 3 ? "active-content" : "content"}>
-                    <h2>Tab3</h2>
-                </div> */}
-                <Product />
+                <div className={toggleState === 1 ? "active-content" : "content"}> <Product productList={db_topBanChay} /></div>
+                <div className={toggleState === 2 ? "active-content" : "content"}> <Product productList={db_moHinhDep} /></div>
+                <div className={toggleState === 3 ? "active-content" : "content"}> <Product productList={db_tranhCanva} /></div>
+                <div className={toggleState === 4 ? "active-content" : "content"}> <Product productList={db_vaiDecor} /></div>
+                <div className={toggleState === 5 ? "active-content" : "content"}> <Product productList={db_setDecal} /></div>
             </div>
+
         </div>
 
     )
