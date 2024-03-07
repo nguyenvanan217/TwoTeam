@@ -3,29 +3,53 @@ import age from '../../../assets/product/age.png';
 import zoro from '../../../assets/product/zoro.png';
 import mabu from '../../../assets/product/mabu.jpg';
 
-export const db_vaiDecor     = [
+export const db_vaiDecor = [
     {
         avatar: doflamingo,
         title: 'Mô Hình Doflamindo',
-        discount: '50',
-        price: '30',
+        discount: '550.000',
+        price: '300.000',
     },
     {
         avatar: age,
         title: 'Mô Hình Portas D.Age',
-        discount: '70',
-        price: '60',
+        discount: '730.000',
+        price: '640.000',
     },
     {
         avatar: zoro,
         title: 'Mô Hình Zorojuurou',
-        discount: '90',
-        price: '55',
+        discount: '900.000',
+        price: '780.000',
     },
     {
         avatar: mabu,
         title: 'Mô Hình Ma Bư Mập',
-        discount: '80',
-        price: '70',
+        discount: '400.000',
+        price: '340.000',
+    },
+    {
+        avatar: doflamingo,
+        title: 'Mô Hình Doflamindo',
+        discount: '550.000',
+        price: '300.000',
+    },
+    {
+        avatar: age,
+        title: 'Mô Hình Portas D.Age',
+        discount: '730.000',
+        price: '640.000',
+    },
+    {
+        avatar: zoro,
+        title: 'Mô Hình Zorojuurou',
+        discount: '900.000',
+        price: '780.000',
+    },
+    {
+        avatar: mabu,
+        title: 'Mô Hình Ma Bư Mập',
+        discount: '400.000',
+        price: '340.000',
     },
 ];
