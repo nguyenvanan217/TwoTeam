@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
         title: 'Trang Chủ',
-        url: '/trangchu',
+        url: '/',
         cName: 'nav-links',
     },
     {
