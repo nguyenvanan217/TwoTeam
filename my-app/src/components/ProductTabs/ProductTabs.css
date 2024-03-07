@@ -1,0 +1,44 @@
+.tabs {
+    border: 1px solid #dcdcdc;
+    border-bottom: none;
+    background-color: #f2f2f2;
+    color: #858585;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+}
+
+.active-tabs {
+    border: 1px solid #dcdcdc;
+    border-top: 2px solid #970000;
+    background-color: white;
+    color: #970000;
+    font-weight: 600;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.active-tabs::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    bottom: -3px;
+    left: 0;
+}
+
+.content-tabs {
+    border: 1px solid #dcdcdc;
+}
+
+.content {
+    display: none;
+}
+
+.active-content {
+    display: block;
+}

@@ -19,9 +19,9 @@ const Footer = () => {
                 <div className='container-maxWidth flex text-[13.6px] text-white gap-[45px] max-sm:flex-col max-sm:p-2'>
                     <div className='w-[25%] max-sm:w-[100%]'>
                         <div className="logo"><img src={Logo} alt="" className=' w-[75%]' /></div>
-                        <p className="mb-[1.3em]">Hotline: 0896565123</p>
-                        <p className="mb-[1.3em]">Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
-                        <p className="mb-[1.3em]">Địa chỉ: Tầng 1, Thống Nhất Complex 82 Nguyễn Tuân, Thanh Xuân, Hà Nội.</p>
+                        <p className="mb-[1.3em] cursor-pointer">Hotline: 0896565123</p>
+                        <p className="mb-[1.3em] cursor-pointer">Thời gian hoạt động: 8:30 - 21:30 (Tạm thời đóng cửa)</p>
+                        <p className="mb-[1.3em] cursor-pointer">Địa chỉ: Tầng 1, Thống Nhất Complex 82 Nguyễn Tuân, Thanh Xuân, Hà Nội.</p>
                         <h3 className="pt-[1rem] text-[17px] font-[600]">Kết nối với Anime Store:</h3>
                         <div className='flex gap-[3px] pt-[0.5rem]'>
                             <span className='w-[33px] h-[33px] rounded-[50%] bg-[#3a589d] flex items-center justify-center text-[15px] hover:bg-[#446084] cursor-pointer transition-all duration-300 ease-in-out'><FaFacebookF /></span>
@@ -36,9 +36,9 @@ const Footer = () => {
                     <div className='w-[25%] max-sm:w-[100%]'>
                         <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Cửa Hàng Anime Store</h3>
                         <ul>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Giới thiệu</li>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Tuyển dụng</li>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Liên hệ</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Giới thiệu</span></li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Tuyển dụng</span></li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Liên hệ</span></li>
                         </ul>
                         <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Gửi e-mail cho chúng tôi</h3>
                         <div className="search flex items-center">
@@ -50,11 +50,11 @@ const Footer = () => {
                     <div className='w-[25%] max-sm:w-[100%]'>
                         <h3 className='pt-[1rem] text-[17px] font-[600] mb-[0.6em]'>Hỗ trợ khách hàng:</h3>
                         <ul>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Hướng dẫn mua hàng online</li>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách bảo hành</li>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách đổi trả</li>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách vận chuyển</li>
-                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' />Chính sách bảo mật</li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Hướng dẫn mua hàng online</span></li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Chính sách bảo hành</span></li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Chính sách đổi trả</span></li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Chính sách vận chuyển</span></li>
+                            <li className='flex items-center footer_menu-shadow gap-[10px] py-[0.6rem]'><MdNavigateNext className='text-[17px]' /><span className='cursor-pointer'>Chính sách bảo mật</span></li>
                         </ul>
                     </div>
 

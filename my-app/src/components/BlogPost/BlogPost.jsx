@@ -25,7 +25,7 @@ const BlogPost = () => {
                 <div className="blog_post-content grid grid-cols-4 gap-[30px] py-[0.5rem] max-sm:grid-cols-2">
                     {PostItems.map((item, index) => {
                         return (
-                            <div className="blog_post-content-item shadow-md object-cover pb-[1.5rem]" key={index}>
+                            <div className="blog_post-content-item shadow-md object-cover pb-[1.5rem] cursor-pointer" key={index}>
                                 <img src={item.src} alt="maxresdefault" className="object-cover w-[100%] h-[173px]" />
                                 <div className="pl-2">
                                     <span className="text-[14px] font-[550]">{item.title}</span>
