@@ -35,7 +35,7 @@ li {
 }
 
 .nav-links:hover {
-    color: yellow;
+    color: #ff4000;
     transition: ease 0.3s all;
 }
 
@@ -56,7 +56,10 @@ li {
         color: #00c8ff;
         cursor: pointer;
     }
-
+    .menu-icon:hover{
+        color: #ff4000;
+        transition: ease 0.3s all;
+    }
     .nav-menu {
         display: flex;
         flex-direction: column;

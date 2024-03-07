@@ -9,10 +9,10 @@ import Trang_chu from './pages/Trang-chu/Trang_chu';
 function App() {
     return (
         <div className="App">
-            <Navbar />
+            {/* <Navbar /> */}
             <Trang_chu />
-            <Footer />
-            <ScrollToTopButton />
+            {/* <Footer /> */}
+            {/* <ScrollToTopButton /> */}
         </div>
     );
 }

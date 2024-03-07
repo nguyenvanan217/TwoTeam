@@ -13,7 +13,7 @@
 }
 
 .product-items {
-    width: 310px;
+    width: calc(321px - 10px);
 }
 
 .product-item {

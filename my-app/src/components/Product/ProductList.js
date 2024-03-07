@@ -28,4 +28,5 @@ export const ProductList = [
         discount: '80',
         price: '70',
     },
+
 ];
