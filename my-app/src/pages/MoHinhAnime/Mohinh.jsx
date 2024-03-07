@@ -3,7 +3,7 @@ import React from 'react'
 function Mo_hinh() {
   return (
     <div>
-      <H1>ĐÂY LÀ MÔ Hình</H1>
+      <h1>ĐÂY LÀ MÔ Hình</h1>
     </div>
   )
 }
