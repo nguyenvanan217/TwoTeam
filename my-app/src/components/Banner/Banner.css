@@ -1,8 +1,7 @@
 .swiper {
     width: 100%;
     height: 100%;
-    margin-bottom: 40px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .swiper-slide {
@@ -47,4 +46,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 850px) {
+    .swiper {
+        z-index: -1;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: none;
+    }
 }

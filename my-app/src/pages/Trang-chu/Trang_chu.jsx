@@ -7,7 +7,6 @@ import BannerBody from '../../components/BannerBody/BannerBody';
 import BlogPost from '../../components/BlogPost/BlogPost';
 import ReviewUsers from '../../components/ReviewUsers/ReviewUsers';
 import Product from '../../components/Product/Product'
-import './Trang_chu.css'
 
 const Trang_chu = () => {
 
@@ -17,7 +16,7 @@ const Trang_chu = () => {
             <div className="my-body container-maxWidth">
                 <Product />
                 <BannerBody />
-                {/* <BlogPost /> */}
+                <BlogPost />
                 <ReviewUsers />
             </div>
         </main >
