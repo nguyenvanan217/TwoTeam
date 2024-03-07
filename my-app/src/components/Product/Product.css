@@ -1,5 +1,6 @@
 .sum-product {
     background-color: #ffff;
+    width: 1320px;
 }
 
 .products {
@@ -13,7 +14,7 @@
 }
 
 .product-items {
-    width: calc(321px - 10px);
+    width: calc(320px - 30px);
 }
 
 .product-item {

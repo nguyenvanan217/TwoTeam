@@ -6,7 +6,7 @@ import ProductItem from './ProductItem'
 function Product() {
     return (
         <>
-            <div className='sum-product container-maxWidth'>
+            <div className='sum-product'>
                 <div className='products'>
                     {ProductList.map((product, index) => (
                         <ProductItem key={index} avatar={product.avatar} title={product.title} discount={product.discount} price={product.price} />
