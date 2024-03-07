@@ -94,5 +94,6 @@ li {
         width: 45%;
         height: auto;
         background-color: #080808;
+        z-index: 1;
     }
 }

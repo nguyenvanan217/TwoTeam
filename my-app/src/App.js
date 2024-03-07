@@ -1,8 +1,9 @@
 // import { Routes, Route } from 'react-router-dom';
 
 import './App.css';
-import Navbar from './components/Header/Navbar';
-import Footer from './components/Footer/Footer';
+import Navbar from './components/header/Navbar';
+import Footer from './components/footer/footer';
+import Product from './components/Product/Product'
 import Trang_chu from './pages/Trang-chu/Trang_chu';
 function App() {
     return (

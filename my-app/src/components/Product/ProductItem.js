@@ -1,30 +1,26 @@
-import doflamingo from '../../assets/product/dofla.png';
-import age from '../../assets/product/age.png';
-import zoro from '../../assets/product/zoro.png';
-import mabu from '../../assets/product/mabu.jpg';
-export const ProductItem = [
-    {
-        avatar: { doflamingo },
-        title: 'Mô Hình Doflamindo',
-        discount: '50',
-        price: '30',
-    },
-    {
-        avatar: { age },
-        title: 'Mô Hình Portas D.Age',
-        discount: '70',
-        price: '60',
-    },
-    {
-        avatar: { zoro },
-        title: 'Mô Hình Zorojuurou',
-        discount: '90',
-        price: '55',
-    },
-    {
-        avatar: { mabu },
-        title: 'Mô Hình Ma Bư Mập',
-        discount: '80',
-        price: '70',
-    },
-];
+import React from 'react'
+import './Product.css'
+function ProductItem({ avatar, title, discount, price }) {
+    return (
+        <div className='product-items'>
+            <div className='product-img'>
+                <img src={avatar} alt="" />
+                <p>{title}</p>
+                <del className='discn'>{discount + " $"}</del>
+                <span className='price'>{price + " $"}</span>
+                <div className="product-buttons">
+                    <button className="detail-button">Chi tiết</button>
+                    <button className="buy-button">Mua ngay</button>
+                </div>
+            </div>
+            {/* <div className="product-title">
+                <div className="product-buttons">
+                    <button className="detail-button">Chi tiết</button>
+                    <button className="buy-button">Mua ngay</button>
+                </div>
+            </div> */}
+        </div>
+    )
+}
+
+export default ProductItem
