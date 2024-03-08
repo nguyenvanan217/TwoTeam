@@ -22,7 +22,7 @@ function Mohinhright() {
         </button>
       </div>
       {showFullContent && (
-        <div className={`full-content ${showFullContent ? 'visible' : 'hidden'}`}>
+        <div>
           <h1 className='inf-title'>Đồ chơi mô hình Anime</h1>
           <h2>
             Cửa hàng Anime Store chuyên cung cấp các loại đồ chơi mô hình –
