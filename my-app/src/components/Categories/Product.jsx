@@ -1,5 +1,5 @@
 import React from 'react'
-import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+// import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 // import { ProductList } from './ProductList'
 import ProductItem from './ProductItem'

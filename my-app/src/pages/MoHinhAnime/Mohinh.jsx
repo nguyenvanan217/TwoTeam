@@ -1,9 +1,20 @@
 import React from 'react'
-
+import Navbar from '../../components/Header/Navbar'
+import Pagetitle from '../../components/PageTitle/Pagetitle'
+import Mohinhleft from './Mohinhleft/Mohinhleft'
+import Mohinhright from './Mohinhright/Mohinhright'
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
+import '../../pages/MoHinhAnime/Mohinh.css'
 function Mo_hinh() {
   return (
     <div>
-      <h1>ĐÂY LÀ MÔ Hình</h1>
+      <Navbar />
+      <Pagetitle pagetitle="Mô Hình Anime" />
+      <div className='mohinh-products'>
+        <Mohinhleft />
+        <Mohinhright />
+        <ScrollToTopButton />
+      </div>
     </div>
   )
 }
