@@ -17,6 +17,10 @@
     margin: 0px auto;
 }
 
+.my-body {
+    padding: 0 1rem;
+}
+
 html {
     scroll-behavior: smooth;
 }

@@ -2,9 +2,11 @@
     background-image: url(../../assets/banner/banner-1.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 .container_title_2 {
+    width: 100%;
     opacity: 0.7;
     background-color: #000000;
 }
