@@ -1,11 +1,8 @@
 import React from 'react'
-// import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-
-// import { ProductList } from './ProductList'
 import ProductItem from './ProductItem'
 
 function Product({ productList, categories, quantity = productList.length }) {
-    
+
     const slideCategories = productList.filter(product => product.categories === categories)
     const slicedProductList = slideCategories.slice(0, quantity)
 

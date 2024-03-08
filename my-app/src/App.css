@@ -16,10 +16,12 @@
     max-width: 1320px;
     margin: 0px auto;
 }
+
 .my-body {
     padding: 0 1rem;
 }
-.my-footer{
+
+.my-footer {
     padding: 30px 1rem;
 }
 
@@ -305,7 +307,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(15px);
     z-index: 100;
 }
