@@ -7,6 +7,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0px auto;
     grid-gap: 30px;
+    row-gap: 60px;
     background-color: #fff;
     text-align: center;
     justify-content: center;
@@ -24,6 +25,12 @@
     width: 100%;
 }
 
+.product-items .title {
+    padding-top: 10px;
+    font-size: 14px;
+    height: 46px;
+}
+
 .discn {
     margin-right: 20px;
 }
@@ -31,6 +38,7 @@
 .price {
     font-weight: bolder;
     color: red;
+    font-size: 14px;
 }
 
 .product-buttons {
@@ -92,4 +100,8 @@
     color: #fff;
 }
 
-@media screen and (max-width: 850px) {}
+@media screen and (max-width: 850px) {
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
