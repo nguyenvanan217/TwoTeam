@@ -28,7 +28,7 @@ const Trang_chu = () => {
                 <BlogPost />
                 <ReviewUsers />
             </div>
-            <ScrollToTopButton/>
+            <ScrollToTopButton />
             <Footer />
         </main >
     )

@@ -4,6 +4,7 @@ import Pagetitle from '../../components/PageTitle/Pagetitle'
 import Mohinhleft from './Mohinhleft/Mohinhleft'
 import Mohinhright from './Mohinhright/Mohinhright'
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
+import Footer from '../../components/Footer/Footer'
 import '../../pages/MoHinhAnime/Mohinh.css'
 function Mo_hinh() {
   return (
@@ -15,6 +16,7 @@ function Mo_hinh() {
         <Mohinhright />
         <ScrollToTopButton />
       </div>
+      <Footer />
     </div>
   )
 }

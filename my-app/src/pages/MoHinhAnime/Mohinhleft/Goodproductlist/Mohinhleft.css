@@ -43,6 +43,7 @@
 .items-products {
     padding: 40px 0 40px 0px;
     border-bottom: 2px solid #e3e0e0;
+    cursor: pointer;
 }
 
 .avatar-image img {
@@ -64,4 +65,9 @@
 .category ul li {
     font-size: 20px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.category ul li:hover {
+    color: red;
 }

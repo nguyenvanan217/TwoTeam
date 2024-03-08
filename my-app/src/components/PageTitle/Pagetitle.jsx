@@ -1,18 +1,19 @@
 import React from 'react';
 import './Pagetitle.css';
+import { NavLink } from 'react-router-dom';
 
 function Pagetitle({ pagetitle }) {
     return (
         <div className='title-page'>
             <div className="title-page-left">
-                <p>Trang Chủ</p>
+                <p><NavLink to="/">Trang Chủ</NavLink></p>
                 <span className="divider">/</span>
-                <p>Sản Phẩm</p>
+                <p><NavLink to="/">Sản Phẩm</NavLink></p>
                 <span className="divider">/</span>
-                <h3><strong>{pagetitle}</strong></h3>
+                <h3><strong><NavLink to="/">{pagetitle}</NavLink></strong></h3>
             </div>
             <div className="title-page-right">
-                <select  className="custom-select" name="" id="">
+                <select className="custom-select" name="" id="">
                     <option value="">Thứ Tự Theo Mức Độ Phổ Biến</option>
                     <option value="">Mới Nhất</option>
                     <option value="">Giá từ thấp đến cao</option>

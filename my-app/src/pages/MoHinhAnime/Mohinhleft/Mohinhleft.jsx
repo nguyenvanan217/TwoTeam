@@ -3,6 +3,7 @@ import { FaSearch } from "react-icons/fa";
 import './Goodproductlist/Mohinhleft.css'
 import { Listprodutcleft } from './Goodproductlist/Listproductleft';
 import ItemLeftProduct from './Goodproductlist/ItemLeftProduct';
+import { NavLink } from 'react-router-dom'
 function Mohinhleft() {
   return (
     <>
@@ -23,11 +24,9 @@ function Mohinhleft() {
         <div className='category'>
           <h1 className='inf-title'>Danh mục sản phẩm</h1>
           <ul>
-            <li>Mô Hình Anime </li>
-            <li>Set Decal Dán Tường Anime </li>
-            <li>Tranh Canvas Anime </li>
-            <li>Vải Decor Anime</li>
-            <li></li>
+            <li><NavLink to="/mohinhanime">Mô Hình Anime</NavLink></li>
+            <li><NavLink to="/tranhcanvas">Tranh Canvas Anime</NavLink> </li>
+            <li><NavLink to="/vaidecor">Vải Decor Anime</NavLink></li>
           </ul>
         </div>
       </div>

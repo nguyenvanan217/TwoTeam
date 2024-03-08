@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { TiThMenu } from 'react-icons/ti';
 import { IoCloseSharp } from 'react-icons/io5';
-import {Link} from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
 import Logo from '../../assets/logo.png';
 import './Navbar.css';
@@ -17,9 +17,9 @@ export default function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-logo">
-                <Link to="/">
+                <NavLink to="/">
                     <img src={Logo} alt="" />
-                </Link>
+                </NavLink>
             </div>
             <div className="menu-icon" onClick={handleMenuToggle}>
                 {open ? <IoCloseSharp /> : <TiThMenu />}
@@ -28,9 +28,9 @@ export default function Navbar() {
                 {MenuItems.map((item, index) => {
                     return (
                         <li key={index}>
-                            <Link className={item.cName} to={item.url}>
+                            <NavLink className={item.cName} to={item.url}>
                                 {item.title}
-                            </Link>
+                            </NavLink>
                         </li>
                     );
                 })}
