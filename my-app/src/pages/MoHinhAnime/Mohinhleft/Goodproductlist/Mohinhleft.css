@@ -109,3 +109,9 @@
 .items-products .price {
     font-size: 13px;
 }
+
+@media screen and (max-width: 850px) {
+    .mohinh-left {
+        display: none;
+    }
+}

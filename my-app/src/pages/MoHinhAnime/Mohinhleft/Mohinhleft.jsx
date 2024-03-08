@@ -7,7 +7,7 @@ import { NavLink } from 'react-router-dom'
 function Mohinhleft() {
   return (
     <>
-      <div className='mohinh-left'>
+      <div className='max-sm:hidden mohinh-left'>
         <h1 className='inf-title'>Tìm sản phẩm</h1>
         <div className="search-box">
           <input type="text" placeholder='Tìm kiếm...' />
