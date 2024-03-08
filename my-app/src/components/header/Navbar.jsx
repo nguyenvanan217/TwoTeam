@@ -4,7 +4,7 @@ import { TiThMenu } from 'react-icons/ti';
 import { IoCloseSharp } from 'react-icons/io5';
 import { NavLink} from 'react-router-dom'
 
-import Logo from '../../assets/logo.png';
+import Logo from '../../assets/logo-anime-png-2-1400x359.png';
 import './Navbar.css';
 import { MenuItems } from './MenuItems';
 

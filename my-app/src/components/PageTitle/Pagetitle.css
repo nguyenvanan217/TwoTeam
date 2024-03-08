@@ -2,9 +2,11 @@
     background-image: url(../../assets/banner/banner-1.jpg);
     background-size: cover;
     background-position: center;
+    width: 100%;
 }
 
 .container_title_2 {
+    width: 100%;
     opacity: 0.7;
     background-color: #000000;
 }
@@ -45,4 +47,11 @@ h3 {
     background-color: #353535;
     color: #fff;
     font-size: 14px;
+}
+
+@media screen and (max-width: 850px) {
+    .title-page {
+        flex-direction: column;
+        gap: 10px;
+    }
 }

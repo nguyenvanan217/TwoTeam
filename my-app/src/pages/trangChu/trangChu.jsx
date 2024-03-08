@@ -20,13 +20,15 @@ const Trang_chu = () => {
         <main>
             <Navbar />
             <Banner />
-            <div className="my-body container-maxWidth">
-                <Title title="SẢN PHẨM NỔI BẬT" />
-                <Product productList={db_product} categories={"san-pham-noi-bat"} quantity={4} />
-                <BannerBody />
-                <ProductTabs />
-                <BlogPost />
-                <ReviewUsers />
+            <div className="my-body bg-white">
+                <div className="container-maxWidth">
+                    <Title title="SẢN PHẨM NỔI BẬT" />
+                    <Product productList={db_product} categories={"san-pham-noi-bat"} quantity={4} />
+                    <BannerBody />
+                    <ProductTabs />
+                    <BlogPost />
+                    <ReviewUsers />
+                </div>
             </div>
             <ScrollToTopButton />
             <Footer />
