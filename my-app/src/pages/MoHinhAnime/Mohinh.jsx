@@ -11,7 +11,7 @@ function Mo_hinh() {
     <div>
       <Navbar />
       <Pagetitle pagetitle="Mô Hình Anime" />
-      <div className='mohinh-products'>
+      <div className='mohinh-products container-maxWidth py-2'>
         <Mohinhleft />
         <Mohinhright />
         <ScrollToTopButton />

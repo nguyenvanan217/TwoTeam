@@ -1,7 +1,3 @@
-import doflamingo from '../../../assets/product/dofla.png';
-import age from '../../../assets/product/age.png';
-import zoro from '../../../assets/product/zoro.png';
-import mabu from '../../../assets/product/mabu.jpg';
 
 // Tạo một context cho tất cả các ảnh trong thư mục
 const imageContext = require.context("../../../assets/product/top-ban-chay", false, /\.(png|jpg|jpeg)$/);
@@ -62,8 +58,48 @@ const imgSetDecal = imageFileSetDecal.reduce((acc, fileName) => {
     return acc;
 }, {});
 
+// Tạo một context cho tất cả các ảnh trong thư mục
+const sanPhamBanChayConText = require.context("../../../assets/product/san-pham-ban-chay", false, /\.(png|jpg|jpeg)$/);
+
+const imageFileSanPhamBanChay = sanPhamBanChayConText.keys();
+
+const imgSanPhamBanChay = imageFileSanPhamBanChay.reduce((acc, fileName) => {
+    const imageName = fileName.replace(/^.*[\\/]/, "").split(".")[0];
+    acc[imageName] = sanPhamBanChayConText(fileName);
+    return acc;
+}, {});
+
 
 export const db_product = [
+    {
+        categories: 'san-pham-noi-bat',
+        avatar: imgSanPhamBanChay.dofla,
+        title: 'Mô Hình Doflamindo',
+        discount: '550.000',
+        price: '300.000',
+    },
+    {
+        categories: 'san-pham-noi-bat',
+        avatar: imgSanPhamBanChay.age,
+        title: 'Mô Hình Portas D.Age',
+        discount: '730.000',
+        price: '640.000',
+    },
+    {
+        categories: 'san-pham-noi-bat',
+        avatar: imgSanPhamBanChay.zoro,
+        title: 'Mô Hình Zorojuurou',
+        discount: '900.000',
+        price: '780.000',
+    },
+    {
+        categories: 'san-pham-noi-bat',
+        avatar: imgSanPhamBanChay.mabu,
+        title: 'Mô Hình Ma Bư Mập',
+        discount: '400.000',
+        price: '340.000',
+    },
+
     {
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.gara_1,

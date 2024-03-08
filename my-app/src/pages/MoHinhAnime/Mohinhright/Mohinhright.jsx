@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { MdOutlineExpandMore } from "react-icons/md";
 import { MdOutlineExpandLess } from "react-icons/md";
 
-import { Listmohinhrightproduct } from './Listmohinhrightproduct';
-import Mohinhrightitem from './Mohinhrightitem';
+import Product from '../../../components/Categories/Product';
+import { db_product } from '../../../components/Categories/db/db_product';
 import './../Mohinh.css';
 
 function Mohinhright() {
@@ -16,17 +16,7 @@ function Mohinhright() {
   return (
     <div>
       <div className='sum-product'>
-        <div className='products'>
-          {Listmohinhrightproduct.map((listproduct, index) => (
-            <Mohinhrightitem
-              key={index}
-              avatar={listproduct.avatar}
-              title={listproduct.title}
-              discount={listproduct.discount}
-              price={listproduct.price}
-            />
-          ))}
-        </div>
+        <Product productList={db_product} categories={"top-ban-chay"} />
         <button className='more' onClick={toggleContent}>
           {showFullContent ? <>Đóng<MdOutlineExpandLess /></> : <>Đọc Thêm<MdOutlineExpandMore /> </>}
         </button>

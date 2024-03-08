@@ -1,18 +1,28 @@
+.container_title {
+    background-image: url(../../assets/banner/banner-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container_title_2 {
+    opacity: 0.7;
+    background-color: #000000;
+}
+
 .title-page {
     width: 100%;
-    height: 80px;
+    padding: 0.5rem 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
-    background-color: #000000;
+    font-size: 14px;
 }
 
 .title-page-left {
     gap: 5px;
     display: flex;
     align-items: center;
-    margin-left: 40px;
 }
 
 .divider {
@@ -27,10 +37,6 @@ h3 {
     cursor: pointer;
 }
 
-.title-page-right {
-    margin-right: 50px;
-}
-
 .custom-select {
     border-radius: 20px;
     padding: 8px 16px;
@@ -38,5 +44,5 @@ h3 {
     background-color: transparent;
     background-color: #353535;
     color: #fff;
-    font-size: 20px;
+    font-size: 14px;
 }

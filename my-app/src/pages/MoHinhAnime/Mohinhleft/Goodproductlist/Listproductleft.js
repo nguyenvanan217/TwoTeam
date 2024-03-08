@@ -13,19 +13,19 @@ export const Listprodutcleft = [
     {
         avatar: age,
         title: 'Mô Hình Portas D.Age',
-        discount: '730.000',
+        discount: '',
         price: '640.000',
     },
     {
         avatar: zoro,
         title: 'Mô Hình Zorojuurou',
-        discount: '900.000',
+        discount: '',
         price: '780.000',
     },
     {
         avatar: mabu,
         title: 'Mô Hình Ma Bư Mập',
-        discount: '400.000',
+        discount: '',
         price: '340.000',
     },
 ]

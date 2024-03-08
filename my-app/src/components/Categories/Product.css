@@ -6,8 +6,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0px auto;
-    grid-gap: 30px;
-    row-gap: 60px;
+    grid-gap: 20px;
+    row-gap: 50px;
     background-color: #fff;
     text-align: center;
     justify-content: center;
