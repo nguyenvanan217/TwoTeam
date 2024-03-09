@@ -4,10 +4,34 @@ import React from 'react'
 // import { ProductList } from './ProductList'
 import ProductItem from './ProductItem'
 
-function Product({ productList, categories, quantity = productList.length }) {
-    
+function Product({ productList, categories, quantity = productList.length, orderBy }) {
+
     const slideCategories = productList.filter(product => product.categories === categories)
-    const slicedProductList = slideCategories.slice(0, quantity)
+    let sortedProductList;
+
+    console.log(sortedProductList);
+    switch (orderBy) {
+        case 'thap-den-cao':
+            sortedProductList = [...slideCategories].sort((a, b) => {
+                const priceA = parseFloat(a.price.replace(/\./g, ''));
+                const priceB = parseFloat(b.price.replace(/\./g, ''));
+                return priceA - priceB;
+            });
+            break;
+        case 'cao-den-thap':
+            sortedProductList = [...slideCategories].sort((a, b) => {
+                const priceA = parseFloat(a.price.replace(/\./g, ''));
+                const priceB = parseFloat(b.price.replace(/\./g, ''));
+                return priceB - priceA;
+            });
+            break;
+
+        default:
+            sortedProductList = [...slideCategories];
+            console.log(sortedProductList);
+            break;
+    }
+    const slicedProductList = sortedProductList.slice(0, quantity)
 
     return (
         <>

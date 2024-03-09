@@ -16,10 +16,12 @@
     max-width: 1320px;
     margin: 0px auto;
 }
+
 .my-body {
     padding: 0 1rem;
 }
-.my-footer{
+
+.my-footer {
     padding: 30px 1rem;
 }
 
