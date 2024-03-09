@@ -2,19 +2,31 @@ import React from 'react';
 import './Pagetitle.css';
 import { NavLink } from 'react-router-dom';
 
-function Pagetitle({ pagetitle, onSortChange }) {
-
+function Pagetitle({ pagetitle, onSortChange, isDropdown }) {
     const handleSortChange = (event) => {
         const selectedValue = event.target.value;
-
         onSortChange(selectedValue);
     };
-    // const handleSortChange = (selectedValue) => {
-    //     // Xử lý giá trị được truyền từ Pagetitle
-    //     setSortValue(selectedValue);
-    //     // Thực hiện các xử lý khác tùy thuộc vào yêu cầu của bạn
-    //   };
 
+    const renderSortOptions = () => {
+        if (isDropdown) {
+            return (
+                <select className="custom-select" name="" id="" onChange={handleSortChange}>
+                    <option value="thu-tu-bo-bien">Thứ Tự Theo Mức Độ Phổ Biến</option>
+                    <option value="thap-den-cao">Giá từ thấp đến cao</option>
+                    <option value="cao-den-thap">Giá từ cao về thấp</option>
+                </select>
+            );
+        } else {
+            return (
+                <button class="btn-23">
+                    <span class="text"></span>
+                    <span aria-hidden="" class="marquee">Trang Web Được Sáng Tạo Bởi TwoTeam</span>
+                </button>
+
+            );
+        }
+    };
     return (
         <div className="container_title">
             <div className='container_title_2'>
@@ -24,15 +36,10 @@ function Pagetitle({ pagetitle, onSortChange }) {
                         <span className="divider">/</span>
                         <p><NavLink to="/">Sản Phẩm</NavLink></p>
                         <span className="divider">/</span>
-                        <h3><strong><NavLink to="/">{pagetitle}</NavLink></strong></h3>
+                        <h3><strong><NavLink to="/mohinhanime">{pagetitle}</NavLink></strong></h3>
                     </div>
                     <div className="title-page-right">
-                        <select className="custom-select" name="" id="" onChange={handleSortChange}>
-                            <option value="thu-tu-bo-bien">Thứ Tự Theo Mức Độ Phổ Biến</option>
-                            <option value="moi-nhat">Mới Nhất</option>
-                            <option value="thap-den-cao">Giá từ thấp đến cao</option>
-                            <option value="cao-den-thap">Giá từ cao về thấp cao</option>
-                        </select>
+                        {renderSortOptions()}
                     </div>
                 </div>
             </div>

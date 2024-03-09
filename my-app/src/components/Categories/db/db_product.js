@@ -72,6 +72,7 @@ const imgSanPhamBanChay = imageFileSanPhamBanChay.reduce((acc, fileName) => {
 
 export const db_product = [
     {
+        id: 1,
         categories: 'san-pham-noi-bat',
         avatar: imgSanPhamBanChay.dofla,
         title: 'Mô Hình Doflamindo',
@@ -79,6 +80,7 @@ export const db_product = [
         price: '300.000',
     },
     {
+        id: 2,
         categories: 'san-pham-noi-bat',
         avatar: imgSanPhamBanChay.age,
         title: 'Mô Hình Portas D.Age',
@@ -86,6 +88,7 @@ export const db_product = [
         price: '640.000',
     },
     {
+        id: 3,
         categories: 'san-pham-noi-bat',
         avatar: imgSanPhamBanChay.zoro,
         title: 'Mô Hình Zorojuurou',
@@ -93,14 +96,15 @@ export const db_product = [
         price: '780.000',
     },
     {
+        id: 4,
         categories: 'san-pham-noi-bat',
         avatar: imgSanPhamBanChay.mabu,
         title: 'Mô Hình Ma Bư Mập',
         discount: '400.000',
         price: '340.000',
     },
-
     {
+        id: 5,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.gara_1,
         title: 'Mô hình Figure Garaa Nhất Vĩ Naruto Resin',
@@ -108,6 +112,7 @@ export const db_product = [
         price: '290.000',
     },
     {
+        id: 6,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.kakasi_1,
         title: 'Mô hình Hatake Kakashi Dog Resin',
@@ -115,6 +120,7 @@ export const db_product = [
         price: '2.000.000',
     },
     {
+        id: 7,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.kakasi_b_1,
         title: 'Mô hình Hatake Kakashi Anbu Dog Resin',
@@ -122,6 +128,7 @@ export const db_product = [
         price: '1.600.000',
     },
     {
+        id: 8,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.pain_1,
         title: 'Mô hình Akatsuki Pain Resin Naruto',
@@ -129,6 +136,7 @@ export const db_product = [
         price: '1.850.000',
     },
     {
+        id: 9,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.sen_1,
         title: 'Mô hình xên bọ hung (Cell)',
@@ -136,6 +144,7 @@ export const db_product = [
         price: '590.000',
     },
     {
+        id: 10,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.mo_hinh_mabu_1,
         title: 'Mô Hình Ma Bư Mập',
@@ -143,6 +152,7 @@ export const db_product = [
         price: '288.000',
     },
     {
+        id: 11,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.mo_hinh_Goku_cuoi_may,
         title: 'Mô hình Goku cưỡi mây',
@@ -150,6 +160,7 @@ export const db_product = [
         price: '290.000',
     },
     {
+        id: 12,
         categories: 'mo-hinh-dep',
         avatar: imgMoHinhDep.mo_hinh_Goku_SSJ_cap_2_1,
         title: 'Mô hình Goku SSJ cấp 2',
@@ -157,6 +168,7 @@ export const db_product = [
         price: '449.000',
     },
     {
+        id: 13,
         categories: 'set-decal',
         avatar: imgSetDecal.truy_na_trong_one_piece,
         title: 'Decal dán tường về lệnh truy nã trong One Piece',
@@ -164,6 +176,7 @@ export const db_product = [
         price: '50.000',
     },
     {
+        id: 14,
         categories: 'set-decal',
         avatar: imgMoHinhDep.mo_hinh_Goku_cuoi_may,
         title: 'Mô hình Goku cưỡi mây',
@@ -171,6 +184,7 @@ export const db_product = [
         price: '290.000',
     },
     {
+        id: 15,
         categories: 'set-decal',
         avatar: imgMoHinhDep.mo_hinh_Goku_SSJ_cap_2_1,
         title: 'Mô hình Goku SSJ cấp 2',
@@ -178,6 +192,7 @@ export const db_product = [
         price: '449.000',
     },
     {
+        id: 16,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.sen_1,
         title: 'Mô hình xên bọ hung (Cell)',
@@ -185,6 +200,7 @@ export const db_product = [
         price: '590.000',
     },
     {
+        id: 17,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.mo_hinh_goku,
         title: 'Mô hình Goku SSJ4 2D',
@@ -192,6 +208,7 @@ export const db_product = [
         price: '829.000',
     },
     {
+        id: 18,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.zoro_1,
         title: 'Mô hình Zorojuurou',
@@ -199,6 +216,7 @@ export const db_product = [
         price: '1.150.000',
     },
     {
+        id: 19,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.COMBO_2_TRANH_TREO_TUONG_ANIME_LUFFY,
         title: 'Combo 2 Tranh Treo Tường Luffy Vs Usopp',
@@ -206,6 +224,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 20,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.mo_hinh_Goku_cuoi_may,
         title: 'Mô hình Goku cưỡi mây',
@@ -213,6 +232,7 @@ export const db_product = [
         price: '290.000',
     },
     {
+        id: 21,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.ace,
         title: 'Decal Dán Tường Ace',
@@ -220,6 +240,7 @@ export const db_product = [
         price: '300.000',
     },
     {
+        id: 22,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.tranh_tro_tuong_goku,
         title: 'Vải Decor Super Goku 2021',
@@ -227,6 +248,7 @@ export const db_product = [
         price: '250.000',
     },
     {
+        id: 23,
         categories: 'top-ban-chay',
         avatar: imgTopBanChay.tranh_treo_tuong_zoro,
         title: 'Decal Dán Tường Zoro',
@@ -234,6 +256,7 @@ export const db_product = [
         price: '79.000',
     },
     {
+        id: 24,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_luffy,
         title: 'Combo 2 Tranh Treo Tường Luffy Vs Usopp',
@@ -241,6 +264,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 25,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_and_law,
         title: 'Combo 2 Tranh Treo Tường Anime Luffy Vs Law',
@@ -248,6 +272,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 26,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_and_ace,
         title: 'Combo 2 tranh treo tường anime luffy vs ace',
@@ -255,6 +280,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 27,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_wano,
         title: 'tranh treo tường luffy',
@@ -262,6 +288,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 28,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_zoro,
         title: 'Combo 2 Tranh Treo Tường Anime Zoro',
@@ -269,6 +296,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 29,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_doffy,
         title: 'Combo 2 Tranh Treo Tường Dofflamingo Vs Rosinante',
@@ -276,6 +304,7 @@ export const db_product = [
         price: '495.000',
     },
     {
+        id: 30,
         categories: 'set-decal',
         avatar: imgVaiDecor.d1,
         title: 'Vải Decor Dragon Ball 2021',
@@ -283,6 +312,7 @@ export const db_product = [
         price: '50.000',
     },
     {
+        id: 31,
         categories: 'set-decal',
         avatar: imgVaiDecor.n1,
         title: 'Vải Decor Naruto 01',
@@ -290,6 +320,7 @@ export const db_product = [
         price: '250.000',
     },
     {
+        id: 32,
         categories: 'vai-decor',
         avatar: imgVaiDecor.d1,
         title: 'Vải Decor Dragon Ball 2021',
@@ -297,11 +328,11 @@ export const db_product = [
         price: '50.000',
     },
     {
+        id: 33,
         categories: 'vai-decor',
         avatar: imgVaiDecor.n1,
         title: 'Vải Decor Naruto 01',
         discount: '',
         price: '250.000',
     },
-
 ];

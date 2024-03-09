@@ -12,11 +12,12 @@ function Mo_hinh() {
   const handleSortChange = (selectedValue) => {
     setSortValue(selectedValue);
   };
+  const [showDropdown] = useState(true);
 
   return (
     <div>
       <Navbar />
-      <Pagetitle pagetitle="Mô Hình Anime" onSortChange={handleSortChange} />
+      <Pagetitle pagetitle="Mô Hình Anime" onSortChange={handleSortChange} isDropdown={showDropdown} />
       <div className="my-body">
         <div className='mohinh-products container-maxWidth py-2'>
           <Mohinhleft />
