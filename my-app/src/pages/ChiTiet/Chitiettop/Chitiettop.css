@@ -1,0 +1,153 @@
+.producs-container {
+    width: 1320px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #333;
+    padding-bottom: 40px;
+
+}
+
+/* .producs-container::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 1px;
+    width: 80%;
+    background-color: #333;
+} */
+
+.big-price {
+    display: block;
+    color: red;
+    height: 50px;
+    width: 271px;
+    display: flex;
+    align-items: center;
+    background-color: #FFFBEB;
+    border: 1px dotted #333;
+    margin: 20px 0px 20px 0px;
+    padding-left: 10px;
+    font-size: 27px;
+}
+
+.inf-title1 {
+    font-size: 25px !important;
+    white-space: nowrap;
+    font-weight: 600;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+}
+
+.inf-title1::before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 0.2rem;
+    background-color: #e1e1e1;
+    bottom: -10px;
+    left: 0;
+}
+
+.list-infor li {
+    font-size: 19px;
+    margin: 10px 0px 5px 0px;
+    font-weight: 450;
+
+}
+
+.instock {
+    color: green;
+    font-weight: bolder;
+}
+
+.soluong {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.soluong input {
+    border: 1px solid #333;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.soluong span {
+    margin-right: 10px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.btn button {
+    border: 1px solid #d3cdcd;
+    width: 27px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.btn button:first-child {
+    border-bottom: none;
+
+}
+
+.products-left-left {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.products-main {
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+.product-left-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.product-left-footer img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.add-card {
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #970000;
+    color: #fff;
+    width: 190px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+.buynow {
+    margin-top: 15px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 9px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: normal;
+    text-transform: uppercase;
+    color: #fff !important;
+    text-align: center;
+    background: #fd6e1d;
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fd6e1d), to(#f59000));
+    background: -webkit-linear-gradient(top, #f59000, #fd6e1d);
+}
+
+.danhmuc li {
+    margin-top: 26px;
+    font-weight: bold;
+}

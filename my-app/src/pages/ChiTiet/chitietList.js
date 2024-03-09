@@ -12,6 +12,13 @@ export const chitiet = [
     {
         title: 'Mô hình Donquixote Doflamingo',
         img: chiTiet.dofla1,
-        second_img:chiTiet.dofla2
+        second_img: chiTiet.dofla2,
+        price: '1.290.000',
+        infor: 'Thông số sản phẩm',
+        charac: 'Donquixote Doflamingo',
+        series: 'One Piece',
+        material: 'Nhựa PVC cao cấp',
+        size: '35cm',
+        instock: 'còn 14 hàng',
     }
 ]
