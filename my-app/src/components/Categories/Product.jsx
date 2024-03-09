@@ -1,11 +1,7 @@
 import React from 'react'
-// import { MdKeyboardDoubleArrowRight } from "react-icons/md";
-
-// import { ProductList } from './ProductList'
 import ProductItem from './ProductItem'
 
 function Product({ productList, categories, quantity = productList.length, orderBy }) {
-
     const slideCategories = productList.filter(product => product.categories === categories)
     let sortedProductList;
 

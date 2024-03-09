@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './Product.css'
-function ProductItem({ avatar, title, discount, price, categories, }) {
+function ProductItem({ avatar, title, discount, price, categories }) {
     {
         return (
             <>
@@ -9,7 +9,7 @@ function ProductItem({ avatar, title, discount, price, categories, }) {
                     <div className='product-item'>
                         <img src={avatar} alt="" />
                         <p className='title'>{title}</p>
-                        <del className={`discn ${discount == '' ? "hidden" : ""}`}>{discount}<sup>đ</sup></del>
+                        <del className={`discn ${discount === '' ? "hidden" : ""}`}>{discount}<sup>đ</sup></del>
                         <span className='price'>{price}<sup>đ</sup></span>
                         <div className="product-buttons">
                             <button className="detail-button">Chi tiết</button>
