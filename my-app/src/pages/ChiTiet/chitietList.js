@@ -8,10 +8,11 @@ const chiTiet = anhChiTietSanPham.reduce((acc, fileName) => {
     acc[imageName] = chiTietsp(fileName);
     return acc;
 }, {});
-export const chitiet = [
+export const detail = [
     {
-        title: 'Mô hình Donquixote Doflamingo',
+        id: 1,
         img: chiTiet.dofla1,
+        title: 'Mô hình Donquixote Doflamingo',
         second_img: chiTiet.dofla2,
         price: '1.290.000',
         infor: 'Thông số sản phẩm',
@@ -20,5 +21,18 @@ export const chitiet = [
         material: 'Nhựa PVC cao cấp',
         size: '35cm',
         instock: 'còn 14 hàng',
+    },
+    {
+        id: 2,
+        img: chiTiet.ace1,
+        title: 'Mô hình Portgas D Ace',
+        second_img: chiTiet.ace2,
+        price: '950.000',
+        infor: 'Thông số sản phẩm',
+        charac: 'Mô hình Portgas D Ace',
+        series: 'One Piece',
+        material: 'Nhựa PVC cao cấp',
+        size: '30cm',
+        instock: 'còn 3 hàng',
     }
-]
+];

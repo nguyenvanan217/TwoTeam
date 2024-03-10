@@ -5,7 +5,6 @@ function Product({ productList, categories, quantity = productList.length, order
     const slideCategories = productList.filter(product => product.categories === categories)
     let sortedProductList;
 
-    console.log(sortedProductList);
     switch (orderBy) {
         case 'thap-den-cao':
             sortedProductList = [...slideCategories].sort((a, b) => {
@@ -24,7 +23,6 @@ function Product({ productList, categories, quantity = productList.length, order
 
         default:
             sortedProductList = [...slideCategories];
-            console.log(sortedProductList);
             break;
     }
     const slicedProductList = sortedProductList.slice(0, quantity)

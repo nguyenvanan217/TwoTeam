@@ -1,28 +1,38 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import dofla from '../../../assets/chitiet/dofla1.png'
-import dofla2 from '../../../assets/chitiet/dofla2.png'
-import '../Chitiettop/Chitiettop.css'
-// cha
+import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+import dofla from '../../../assets/chitiet/dofla1.png';
+import dofla2 from '../../../assets/chitiet/dofla2.png';
+import '../Chitiettop/Chitiettop.css';
+
 function Chitiettop() {
     const [count, setCount] = useState(1);
-    const hadleIncrease = () => {
-        setCount(count + 1)
-    }
-    const hadleReduce = () => {
+    const [productImage, setProductImage] = useState(dofla);
+    const [selectedImage, setSelectedImage] = useState(dofla);
+
+    const handleIncrease = () => {
+        setCount(count + 1);
+    };
+
+    const handleReduce = () => {
         if (count > 1) {
             setCount(count - 1);
         }
-    }
+    };
+
+    const handleImageClick = (image) => {
+        setProductImage(image);
+        setSelectedImage(image);
+    };
+
     return (
         <div>
             <div className="producs-container">
                 <div className="products-main">
                     <div className="products-left-left">
-                        <img src={dofla} alt="" />
+                        <img src={productImage} alt="Product" />
                         <div className="product-left-footer">
-                            <img src={dofla} alt="" />
-                            <img src={dofla2} alt="" />
+                            <img src={dofla} alt="" onClick={() => handleImageClick(dofla)} style={{ filter: selectedImage === dofla2 ? 'none' : 'grayscale(1)' }} />
+                            <img src={dofla2} alt="" onClick={() => handleImageClick(dofla2)} style={{ filter: selectedImage === dofla ? 'none' : 'grayscale(1)' }} />
                         </div>
                     </div>
                     <div className="products-left-right">
@@ -41,8 +51,8 @@ function Chitiettop() {
                             <span>Số Lượng:</span>
                             <input type='text' value={count} readOnly />
                             <div className="btn">
-                                <button onClick={hadleIncrease}>+</button>
-                                <button onClick={hadleReduce}>-</button>
+                                <button onClick={handleIncrease}>+</button>
+                                <button onClick={handleReduce}>-</button>
                             </div>
                             <button className='add-card'>Thêm Vào Giỏ Hàng</button>
                         </div>
@@ -62,7 +72,6 @@ function Chitiettop() {
                 </div>
             </div>
         </div>
-    )
+    );
 }
-
-export default Chitiettop
+export default Chitiettop;

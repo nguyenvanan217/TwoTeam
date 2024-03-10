@@ -3,6 +3,7 @@ import Navbar from '../../components/Header/Navbar'
 import Pagetitle from '../../components/PageTitle/Pagetitle'
 import Chitiettop from './Chitiettop/Chitiettop';
 import Chitietbtt from './Chitietbtt/Chitietbtt';
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
 import Footer from '../../components/Footer/Footer'
 function Chitiet() {
     const [showDropdown] = React.useState(false);
@@ -12,8 +13,9 @@ function Chitiet() {
             <Navbar />
             <Pagetitle pagetitle="Chi Tiết Sản Phẩm" isDropdown={showDropdown} />
             <Chitiettop />
-            <Chitietbtt/>
-            <Footer/>
+            <Chitietbtt />
+            <ScrollToTopButton />
+            <Footer />
         </div>
     )
 }

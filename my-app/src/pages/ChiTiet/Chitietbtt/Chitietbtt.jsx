@@ -20,7 +20,7 @@ function Chitietbtt() {
             {showFullContent && (
                 <div>
                     <h1 className='inf-title'>MÔ HÌNH DONQUIXOTE DOFLAMINGO</h1>
-                    <p style={{ display: "flex", alignItems: 'center' }}><h1 className='mota'><strong>Mô hình Donquixote Doflamingo</strong></h1>
+                    <p style={{ margin: "20px 0px 10px 0px" }}><h1 className='mota'><strong>Mô hình Donquixote Doflamingo</strong></h1>
                         cực ngầu được làm từ nhựa PVC cao cấp. Sản phẩm mô phỏng nhân vật Doflamingo – nhân vật phản diện chính trong Arc Dressrosa.
                     </p>
                     <h1 style={{ margin: "10px 0px 10px 0px" }}><strong>MỘT VÀI THÔNG TIN VỀ DONQUIXOTE DOFLAMINGO</strong></h1>

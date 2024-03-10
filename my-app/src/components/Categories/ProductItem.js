@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import './Product.css';
 
-function ProductItem({ avatar, title, discount, price, categories }) {
+function ProductItem({ id, avatar, title, discount, price, categories }) {
+    // đợi t load xí, hỏi chat gpt đi
     return (
         <div className='product-items'>
             <div className='product-item'>
@@ -12,7 +12,7 @@ function ProductItem({ avatar, title, discount, price, categories }) {
                 <del className={`discn ${discount === '' ? "hidden" : ""}`}>{discount}<sup>đ</sup></del>
                 <span className='price'>{price}<sup>đ</sup></span>
                 <div className="product-buttons">
-                    <Link to="/chitiet">
+                    <Link to={{ pathname: `/chi-tiet/${id}`, state: { productId: id } }}>
                         <button className="detail-button">Chi tiết</button>
                     </Link>
                     <Link to="/chitiet">
