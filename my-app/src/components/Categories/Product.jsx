@@ -32,7 +32,7 @@ function Product({ productList, categories, quantity = productList.length, order
             <div className='sum-product'>
                 <div className='products container-maxWidth'>
                     {slicedProductList.map((product, index) => (
-                        <ProductItem key={index} avatar={product.avatar} title={product.title} discount={product.discount} price={product.price} categories={product.categories} />
+                        <ProductItem key={index} avatar={product.avatar} title={product.title} discount={product.discount} price={product.price} categories={product.categories} id={product.id} />
                     ))}
                 </div>
                 {/* <button className="more">Đi đến cửa hàng <MdKeyboardDoubleArrowRight /></button> */}

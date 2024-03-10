@@ -1,13 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import dofla from '../../../assets/chitiet/dofla1.png';
 import dofla2 from '../../../assets/chitiet/dofla2.png';
 import '../Chitiettop/Chitiettop.css';
+import { useParams } from 'react-router-dom';
+import { db_product } from '../../../components/Categories/db/db_product';
 
 function Chitiettop() {
     const [count, setCount] = useState(1);
     const [productImage, setProductImage] = useState(dofla);
     const [selectedImage, setSelectedImage] = useState(dofla);
+    const { id } = useParams();
+    console.log(id)
 
     const handleIncrease = () => {
         setCount(count + 1);
@@ -24,29 +28,31 @@ function Chitiettop() {
         setSelectedImage(image);
     };
 
+    const product = db_product.find(item => item.id == id)
+
     return (
-        <div>
+        < div >
             <div className="producs-container">
                 <div className="products-main">
                     <div className="products-left-left">
-                        <img src={productImage} alt="Product" />
+                        <img src={product.avatar} alt="Product" />
                         <div className="product-left-footer">
                             <img src={dofla} alt="" onClick={() => handleImageClick(dofla)} style={{ filter: selectedImage === dofla2 ? 'none' : 'grayscale(1)' }} />
                             <img src={dofla2} alt="" onClick={() => handleImageClick(dofla2)} style={{ filter: selectedImage === dofla ? 'none' : 'grayscale(1)' }} />
                         </div>
                     </div>
                     <div className="products-left-right">
-                        <h1 className='inf-title1'>Mô hình Donquixote Doflamingo</h1>
-                        <strong className='big-price'>1.290.000<sup>đ</sup></strong>
+                        <h1 className='inf-title1'>{product.title}</h1>
+                        <strong className='big-price'>{product.price}<sup>đ</sup></strong>
                         <h2 className='inf-title1'>Thông số sản phẩm</h2>
                         <ul className='list-infor'>
-                            <li>Nhân Vật: Donquixote Doflamingo</li>
-                            <li>Series: One Piece</li>
-                            <li>Chất Liệu: Nhựa PVC cao cấp</li>
+                            <li>Nhân Vật:{product.charac}</li>
+                            <li>Series: {product.series}</li>
+                            <li>Chất Liệu: {product.material}</li>
                             <li>Tình trạng: New, full box</li>
-                            <li>Kích thước: 35cm</li>
+                            <li>Kích thước: {product.size}</li>
                         </ul>
-                        <span className='instock'>còn 14 hàng</span>
+                        <span className='instock'>{product.instock}</span>
                         <div className="soluong">
                             <span>Số Lượng:</span>
                             <input type='text' value={count} readOnly />
@@ -71,7 +77,9 @@ function Chitiettop() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
+
+
 }
 export default Chitiettop;
