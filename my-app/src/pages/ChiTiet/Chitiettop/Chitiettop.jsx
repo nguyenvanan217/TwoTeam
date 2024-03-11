@@ -5,8 +5,11 @@ import { useParams } from 'react-router-dom';
 import { db_product } from '../../../components/Categories/db/db_product';
 
 function Chitiettop() {
-    // tăng giảm số lượng
     const [count, setCount] = useState(1);
+    const { id } = useParams();
+    const product = db_product.find(item => item.id == id)
+    console.log(id)
+
     const handleIncrease = () => {
         setCount(count + 1);
     };
@@ -16,9 +19,7 @@ function Chitiettop() {
             setCount(count - 1);
         }
     };
-    //xác định id
-    const { id } = useParams();
-    const product = db_product.find(item => item.id === id)
+
     //thay đổi ảnh 
     const [img, setImg] = useState(product.detail[0].img)
     const [selectImg, setSelectImg] = useState(product.detail[0].img)
@@ -26,6 +27,7 @@ function Chitiettop() {
         setImg(imageUrl);
         setSelectImg(imageUrl);
     };
+
     return (
         < div >
             <div className="producs-container">
