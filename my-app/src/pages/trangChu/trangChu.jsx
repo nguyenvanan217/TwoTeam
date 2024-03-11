@@ -7,8 +7,8 @@ import ReviewUsers from '../../components/ReviewUsers/ReviewUsers';
 
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
 import Product from "../../components/Categories/Product";
-import Navbar from "../../components/Header/Navbar";
-import Footer from "../../components/Footer/Footer";
+import Navbar from "../../components/header/Navbar";
+import Footer from "../../components/footer/footer";
 import Title from "../../components/Title/Title";
 import ProductTabs from '../../components/ProductTabs/ProductTabs'
 

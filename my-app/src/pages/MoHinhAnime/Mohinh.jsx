@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react'
-import Navbar from '../../components/Header/Navbar'
+import React, { useState } from 'react'
+import Navbar from '../../components/header/Navbar'
 import Pagetitle from '../../components/PageTitle/Pagetitle'
 import Mohinhleft from './Mohinhleft/Mohinhleft'
 import Mohinhright from './Mohinhright/Mohinhright'
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/footer/footer'
 import '../../pages/MoHinhAnime/Mohinh.css'
 function Mo_hinh() {
   const [sortValue, setSortValue] = useState("");

@@ -14,7 +14,7 @@ function ProductItem({ id, avatar, title, discount, price, categories }) {
                     <Link to={{ pathname: `/chitiet/${id}`}}>
                         <button className="detail-button">Chi tiết</button>
                     </Link>
-                    <Link to="/chitiet">
+                    <Link to={{ pathname: `/chitiet/${id}`}}>
                         <button className="buy-button">Mua ngay</button>
                     </Link>
                 </div>

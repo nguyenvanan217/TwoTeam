@@ -1,18 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import dofla from '../../../assets/chitiet/dofla1.png';
-import dofla2 from '../../../assets/chitiet/dofla2.png';
 import '../Chitiettop/Chitiettop.css';
 import { useParams } from 'react-router-dom';
 import { db_product } from '../../../components/Categories/db/db_product';
 
 function Chitiettop() {
+    // tăng giảm số lượng
     const [count, setCount] = useState(1);
-    const [productImage, setProductImage] = useState(dofla);
-    const [selectedImage, setSelectedImage] = useState(dofla);
-    const { id } = useParams();
-    console.log(id)
-
     const handleIncrease = () => {
         setCount(count + 1);
     };
@@ -22,37 +16,45 @@ function Chitiettop() {
             setCount(count - 1);
         }
     };
-
-    const handleImageClick = (image) => {
-        setProductImage(image);
-        setSelectedImage(image);
+    //xác định id
+    const { id } = useParams();
+    const product = db_product.find(item => item.id === id)
+    //thay đổi ảnh 
+    const [img, setImg] = useState(product.detail[0].img)
+    const [selectImg, setSelectImg] = useState(product.detail[0].img)
+    const handleImage = (imageUrl) => {
+        setImg(imageUrl);
+        setSelectImg(imageUrl);
     };
-
-    const product = db_product.find(item => item.id == id)
-
     return (
         < div >
             <div className="producs-container">
                 <div className="products-main">
                     <div className="products-left-left">
-                        <img src={product.avatar} alt="Product" />
+                        <img src={img} alt="Product" />
                         <div className="product-left-footer">
-                            <img src={dofla} alt="" onClick={() => handleImageClick(dofla)} style={{ filter: selectedImage === dofla2 ? 'none' : 'grayscale(1)' }} />
-                            <img src={dofla2} alt="" onClick={() => handleImageClick(dofla2)} style={{ filter: selectedImage === dofla ? 'none' : 'grayscale(1)' }} />
+                            <img src={product.detail[0].img}
+                                alt=""
+                                onClick={() => handleImage(product.detail[0].img)}
+                                style={{ filter: selectImg === product.detail[0].img ? 'grayscale(1)' : 'none' }} />
+                            <img src={product.detail[0].second_img}
+                                alt=""
+                                onClick={() => handleImage(product.detail[0].second_img)}
+                                style={{ filter: selectImg === product.detail[0].second_img ? 'grayscale(1)' : 'none' }} />
                         </div>
                     </div>
                     <div className="products-left-right">
-                        <h1 className='inf-title1'>{product.title}</h1>
+                        <h1 className='inf-title1'>{product.detail[0].title}</h1>
                         <strong className='big-price'>{product.price}<sup>đ</sup></strong>
                         <h2 className='inf-title1'>Thông số sản phẩm</h2>
                         <ul className='list-infor'>
-                            <li>Nhân Vật:{product.charac}</li>
-                            <li>Series: {product.series}</li>
-                            <li>Chất Liệu: {product.material}</li>
+                            <li>Nhân Vật:{product.detail[0].charac}</li>
+                            <li>Series: {product.detail[0].series}</li>
+                            <li>Chất Liệu: {product.detail[0].material}</li>
                             <li>Tình trạng: New, full box</li>
-                            <li>Kích thước: {product.size}</li>
+                            <li>Kích thước: {product.detail[0].size}</li>
                         </ul>
-                        <span className='instock'>{product.instock}</span>
+                        <span className='instock'>{product.detail[0].instock}</span>
                         <div className="soluong">
                             <span>Số Lượng:</span>
                             <input type='text' value={count} readOnly />

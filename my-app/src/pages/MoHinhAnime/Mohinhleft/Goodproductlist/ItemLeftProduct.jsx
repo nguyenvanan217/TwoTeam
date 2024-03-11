@@ -10,7 +10,7 @@ function ItemLeftProduct({ avatar, title, discount, price }) {
                 <div className="infor-product">
                     <strong>{title}</strong>
                     <div className='product-content'>
-                    <del className={`discn ${discount == '' ? "hidden" : ""}`}>{discount}<sup>đ</sup></del>
+                    <del className={`discn ${discount === '' ? "hidden" : ""}`}>{discount}<sup>đ</sup></del>
                         <span className='price'>{price}<sup>đ</sup></span>
                     </div>
                 </div>

@@ -3,7 +3,7 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 
 import './App.css';
 
-import TrangChu from './pages/Trangchu/Trangchu';
+import TrangChu from './pages/Trangchu/trangChu';
 import Blog from './pages/Blog/Blog';
 import Lienhe from './pages/LienHe/Lienhe';
 import Tranhcanva from './pages/TranhCanva/Tranhcanva';
@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div className="App">
-            {loading && (
+            {/* {loading && (
                 <div className="saringan">
                     <div class="sharingon">
                         <div class="ring">
@@ -38,7 +38,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
             <Routes>
                 <Route path='/' element={<TrangChu />} />
                 <Route path='/mohinhanime' element={<Mohinh />} />
