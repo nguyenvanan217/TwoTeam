@@ -3,13 +3,17 @@ import { NavLink } from 'react-router-dom';
 import '../Chitiettop/Chitiettop.css';
 import { useParams } from 'react-router-dom';
 import { db_product } from '../../../components/Categories/db/db_product';
+import BuyNow from '../../../components/BuyNow/BuyNow';
 
 function Chitiettop() {
     const [count, setCount] = useState(1);
+    const updateCount = (newCount) => {
+        setCount(newCount);
+    };
     const { id } = useParams();
-    const product = db_product.find(item => item.id == id)
-    console.log(id)
-
+    const product = db_product.find(item => item.id == id);
+    console.log(id);
+    const [selectedProduct, setSelectedProduct] = useState(null);
     const handleIncrease = () => {
         setCount(count + 1);
     };
@@ -19,17 +23,30 @@ function Chitiettop() {
             setCount(count - 1);
         }
     };
+    
+    // hiện mua ngay
+    const [showBuyNow, setShowBuyNow] = useState(false);
+
+    const handleShowBuyNow = () => {
+        setSelectedProduct(product);
+        setShowBuyNow(!showBuyNow);
+    };
+
+    const handleCloseBuyNow = () => {
+        setShowBuyNow(false);
+    };
 
     //thay đổi ảnh 
-    const [img, setImg] = useState(product.detail[0].img)
-    const [selectImg, setSelectImg] = useState(product.detail[0].img)
+    const [img, setImg] = useState(product.detail[0].img);
+    const [selectImg, setSelectImg] = useState(product.detail[0].img);
     const handleImage = (imageUrl) => {
         setImg(imageUrl);
         setSelectImg(imageUrl);
     };
 
     return (
-        < div >
+        <div>
+            {showBuyNow && <BuyNow updateCount={updateCount} quantity={count} product={selectedProduct} handleClose={handleCloseBuyNow} />}
             <div className="producs-container">
                 <div className="products-main">
                     <div className="products-left-left">
@@ -50,7 +67,7 @@ function Chitiettop() {
                         <strong className='big-price'>{product.price}<sup>đ</sup></strong>
                         <h2 className='inf-title1'>Thông số sản phẩm</h2>
                         <ul className='list-infor'>
-                            <li>Nhân Vật:{product.detail[0].charac}</li>
+                            <li>Nhân Vật: {product.detail[0].charac}</li>
                             <li>Series: {product.detail[0].series}</li>
                             <li>Chất Liệu: {product.detail[0].material}</li>
                             <li>Tình trạng: New, full box</li>
@@ -66,8 +83,9 @@ function Chitiettop() {
                             </div>
                             <button className='add-card'>Thêm Vào Giỏ Hàng</button>
                         </div>
-                        <button className='buynow'>Mua Ngay
-                            <br />Gọi điện xác nhận và giao hàng tận nơi</button>
+                        <button className='buynow' onClick={handleShowBuyNow}>Mua Ngay
+                            <br />Gọi điện xác nhận và giao hàng tận nơi
+                        </button>
                     </div>
                 </div>
                 <div className="products-right">
@@ -83,7 +101,6 @@ function Chitiettop() {
             </div>
         </div >
     );
-
-
 }
+
 export default Chitiettop;

@@ -86,7 +86,7 @@ export const db_product = [
         avatar: imgSanPhamBanChay.dofla,
         title: 'Mô Hình Doflamindo',
         discount: '550.000',
-        price: '300.000',
+        price: '1000.000',
         detail: [
             {
                 img: chiTiet.dofla1,

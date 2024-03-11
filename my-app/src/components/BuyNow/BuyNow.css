@@ -1,0 +1,168 @@
+.buy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    inset: 0;
+    z-index: 11;
+}
+
+.buy-title {
+    background-color: #DD0000;
+    position: relative;
+}
+
+.title-main {
+    color: #fff;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.buy-title svg {
+    position: absolute;
+    right: 7px;
+    top: 3px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #FFFF;
+}
+
+.inf-title {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.buy-main {
+    width: 830px;
+    display: flex;
+    background-color: #fff;
+    height: auto;
+    padding: 10px;
+    /* width: 751px; */
+}
+
+.buynow-left {
+    width: 50%;
+}
+
+.buynow-image {
+    display: flex;
+    flex-direction: column
+}
+
+.buynow-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.buynowleft-top {
+    display: flex;
+}
+
+.price1 {
+    color: #DD0000;
+}
+
+.adress textarea {
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 3px;
+    caret-color: #DD0000;
+}
+
+.note textarea {
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 3px;
+    caret-color: #DD0000;
+}
+
+.adress-email input {
+    width: 395.3px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 3px;
+}
+
+.buynow-right {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 10px;
+}
+
+/* right */
+.name-num {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.name-num input {
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 2px;
+    padding-left: 3px;
+}
+
+.pay {
+    display: flex;
+    gap: 10px;
+}
+
+
+.discount strong {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-discount {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input-discount input {
+    width: 277px;
+    height: 26px;
+    border: 1px solid #ccc;
+    outline: none;
+    padding-left: 3px;
+}
+
+.input-discount button {
+    font-size: 12px;
+    padding: 0 10px;
+    border: 1px solid #c69a39;
+    width: 70px;
+    height: 26px;
+    line-height: 24px;
+    min-height: inherit;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin: 0;
+    font-family: Tahoma, Arial, sans-serif;
+    background: #c69a39;
+    color: #fff;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.submit {
+    width: 360px;
+    margin-top: 10px;
+    border-radius: 2px;
+    height: 40px;
+    background-color: #FF382F;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.sum-bank>p>strong {
+    color: #DD0000;
+}
