@@ -12,19 +12,19 @@ function BuyNow({ updateCount, quantity, product, handleClose }) {
         const newCount = count + 1;
         setCount(newCount);
         updateCount(newCount);
-        calculateTotalPrice(newCount); 
+        calculateTotalPrice(newCount);
     };
 
     const handleReduce = () => {
         if (count > 1) {
             const newCount = count - 1;
             setCount(newCount);
-            updateCount(newCount); 
-            calculateTotalPrice(newCount); 
+            updateCount(newCount);
+            calculateTotalPrice(newCount);
         }
     };
     const calculateTotalPrice = (newCount) => {
-        const newTotalPrice = product.price * newCount;
+        const newTotalPrice = (product.price * newCount)
         setTotalPrice(newTotalPrice);
     };
     // tắt mở
@@ -98,7 +98,7 @@ function BuyNow({ updateCount, quantity, product, handleClose }) {
                                     </div>
                                 </div>
                                 <div className="sum-bank">
-                                    <p>Tổng: <strong>{totalPrice.toLocaleString()}<sup>đ</sup> </strong></p>
+                                    <p>Tổng: <strong>{totalPrice.toLocaleString()}.000<sup>đ</sup> </strong></p>
                                     <button className='submit'>Đặt Hàng Ngay</button>
                                 </div>
                             </div>
