@@ -69,7 +69,6 @@ const imgSanPhamBanChay = imageFileSanPhamBanChay.reduce((acc, fileName) => {
     return acc;
 }, {});
 
-// Tạo một context cho tất cả các ảnh trong thư mục
 const chiTietsp = require.context("../../../assets/chitiet", false, /\.(png|jpg|jpeg)$/);
 
 const anhChiTietSanPham = chiTietsp.keys();
@@ -86,7 +85,7 @@ export const db_product = [
         avatar: imgSanPhamBanChay.dofla,
         title: 'Mô Hình Doflamindo',
         discount: '550.000',
-        price: '1000.000',
+        price: '470.000',
         detail: [
             {
                 img: chiTiet.dofla1,

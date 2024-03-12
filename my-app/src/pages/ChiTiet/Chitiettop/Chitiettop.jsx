@@ -17,33 +17,25 @@ function Chitiettop() {
     const handleIncrease = () => {
         setCount(count + 1);
     };
-
     const handleReduce = () => {
         if (count > 1) {
             setCount(count - 1);
         }
     };
-    
-    // hiện mua ngay
     const [showBuyNow, setShowBuyNow] = useState(false);
-
     const handleShowBuyNow = () => {
         setSelectedProduct(product);
         setShowBuyNow(!showBuyNow);
     };
-
     const handleCloseBuyNow = () => {
         setShowBuyNow(false);
     };
-
-    //thay đổi ảnh 
     const [img, setImg] = useState(product.detail[0].img);
     const [selectImg, setSelectImg] = useState(product.detail[0].img);
     const handleImage = (imageUrl) => {
         setImg(imageUrl);
         setSelectImg(imageUrl);
     };
-
     return (
         <div>
             {showBuyNow && <BuyNow updateCount={updateCount} quantity={count} product={selectedProduct} handleClose={handleCloseBuyNow} />}
@@ -92,9 +84,12 @@ function Chitiettop() {
                     <div className='category1'>
                         <h1 className='inf-title1'>Danh mục sản phẩm</h1>
                         <ul className='danhmuc'>
+                            <li><NavLink to="/">Trang Chủ</NavLink></li>
                             <li><NavLink to="/mohinhanime">Mô Hình Anime</NavLink></li>
                             <li><NavLink to="/tranhcanvas">Tranh Canvas Anime</NavLink> </li>
                             <li><NavLink to="/vaidecor">Vải Decor Anime</NavLink></li>
+                            <li><NavLink to="/blog">Blog Giải Trí</NavLink></li>
+                            <li><NavLink to="/lienhe">Liên Hệ</NavLink> </li>
                         </ul>
                     </div>
                 </div>
