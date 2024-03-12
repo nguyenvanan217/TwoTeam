@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
-import img from '../../assets/chitiet/dofla1.png'
 import './BuyNow.css'
 import { IoIosCloseCircle } from "react-icons/io";
-import { db_product } from '../../components/Categories/db/db_product';
 
 function BuyNow({ updateCount, quantity, product, handleClose }) {
+    const [paymentMethod, setPaymentMethod] = useState(null);
     const [totalPrice, setTotalPrice] = useState(product.price * quantity);
-    //tăng số lượng
     const [count, setCount] = useState(quantity);
     const handleIncrease = () => {
         const newCount = count + 1;
@@ -29,7 +27,9 @@ function BuyNow({ updateCount, quantity, product, handleClose }) {
     };
     // tắt mở
     const [isOpen, _setIsOpen] = useState(true)
-
+    const handlePaymentMethodChange = (method) => {
+        setPaymentMethod(method);
+    };
     return (
         <div className={`buy-container-main ${isOpen ? 'open' : 'closed'}`}>
             {isOpen && (
@@ -64,7 +64,7 @@ function BuyNow({ updateCount, quantity, product, handleClose }) {
                                 </div>
                             </div>
                             <div className="buynow-right">
-                                <h1><strong>Thông Tin Người Mua</strong></h1>
+                                <h1><strong>Thông Tin Người Mua:</strong></h1>
                                 <div className="name-num">
                                     <input type="text" placeholder='Họ và tên' />
                                     <input type="text" placeholder='Số điện thoại' />
@@ -81,12 +81,19 @@ function BuyNow({ updateCount, quantity, product, handleClose }) {
                                 <div className="pay-main">
                                     <h1><strong>Hình thức thanh toán</strong></h1>
                                     <div className="pay">
-                                        <input type="radio" name="" id="" />
-                                        <p>Trả tiền mặt khi nhận hàng</p>
+                                        <input type="radio" id="cash"
+                                            name="paymentMethod"
+                                            checked={paymentMethod === 'cash'}
+                                            onChange={() => handlePaymentMethodChange('cash')} />
+                                        <label htmlFor="cash">Trả tiền mặt khi nhận hàng</label>
                                     </div>
                                     <div className="pay">
-                                        <input type="radio" name="" id="" />
-                                        <p>Kiểm tra thanh toán</p>
+                                        <input type="radio"
+                                            id="check"
+                                            name="paymentMethod"
+                                            checked={paymentMethod === 'check'}
+                                            onChange={() => handlePaymentMethodChange('check')} />
+                                        <label htmlFor="check">Kiểm tra thanh toán</label>
                                     </div>
 
                                 </div>
