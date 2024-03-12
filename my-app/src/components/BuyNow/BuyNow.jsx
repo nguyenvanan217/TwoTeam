@@ -35,7 +35,7 @@ function BuyNow({ updateCount, quantity, product, handleClose }) {
             {isOpen && (
                 <div className="buy-container ">
                     <div className="buy-title">
-                        <h1 className='title-main'>ĐẶT MUA MÔ HÌNH DONQUIXOTE DOFLAMINGO</h1>
+                        <h1 className='title-main'>Đặt Mua {product.title}</h1>
                         <IoIosCloseCircle onClick={handleClose} />
                         <div className='buy-main'>
                             <div className="buynow-left">

@@ -89,7 +89,7 @@ export const db_product = [
         detail: [
             {
                 img: chiTiet.dofla1,
-                title: 'Mô hình Donquixote Doflamingo',
+                title: 'Mô Hình Donquixote Doflamingo',
                 second_img: chiTiet.dofla2,
                 infor: 'Thông số sản phẩm',
                 charac: 'Donquixote Doflamingo',
@@ -110,10 +110,10 @@ export const db_product = [
         detail: [
             {
                 img: chiTiet.ace1,
-                title: 'Mô hình Portgas D Ace',
+                title: 'Mô Hình Portgas D.Ace',
                 second_img: chiTiet.ace2,
                 infor: 'Thông số sản phẩm',
-                charac: 'Mô hình Portgas D Ace',
+                charac: 'Mô hình Portgas D.Ace',
                 series: 'One Piece',
                 material: 'Nhựa PVC cao cấp',
                 size: '30cm',
