@@ -317,7 +317,7 @@ export const db_product = [
         id: 27,
         categories: 'tranh-canva',
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_wano,
-        title: 'tranh treo tường luffy',
+        title: 'Tranh treo tường luffy',
         discount: '400.000',
         price: '495.000',
     },

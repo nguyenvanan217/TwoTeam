@@ -20,8 +20,8 @@ function Mo_hinh() {
       <Pagetitle pagetitle="Mô Hình Anime" onSortChange={handleSortChange} isDropdown={showDropdown} />
       <div className="my-body">
         <div className='mohinh-products container-maxWidth py-2'>
-          <Mohinhleft />
-          <Mohinhright sortValue={sortValue} />
+          <Mohinhleft productType="Mô hình anime"/>
+          <Mohinhright category="mo-hinh-dep" sortValue={sortValue} />
           <ScrollToTopButton />
         </div>
       </div>

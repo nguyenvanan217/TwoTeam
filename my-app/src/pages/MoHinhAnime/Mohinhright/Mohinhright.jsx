@@ -6,7 +6,7 @@ import Product from '../../../components/Categories/Product';
 import { db_product } from '../../../components/Categories/db/db_product';
 import './../Mohinh.css';
 
-function Mohinhright({ sortValue }) {
+function Mohinhright({ category, sortValue }) {
   const [showFullContent, setShowFullContent] = useState(false);
 
   const toggleContent = () => {
@@ -16,7 +16,7 @@ function Mohinhright({ sortValue }) {
   return (
     <div>
       <div className='sum-product'>
-        <Product productList={db_product} categories="mo-hinh-dep" orderBy={sortValue} />
+        <Product productList={db_product} categories={category} orderBy={sortValue} />
         <button className='more' onClick={toggleContent}>
           {showFullContent ? <>Đóng<MdOutlineExpandLess /></> : <>Đọc Thêm<MdOutlineExpandMore /> </>}
         </button>

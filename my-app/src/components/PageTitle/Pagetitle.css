@@ -48,7 +48,9 @@ h3 {
     color: #fff;
     font-size: 14px;
 }
-
+strong {
+    color: #d41212;
+}
 @media screen and (max-width: 850px) {
     .title-page {
         flex-direction: column;

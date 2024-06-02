@@ -4,7 +4,8 @@ import './Goodproductlist/Mohinhleft.css'
 import { Listprodutcleft } from './Goodproductlist/Listproductleft';
 import ItemLeftProduct from './Goodproductlist/ItemLeftProduct';
 import { NavLink } from 'react-router-dom'
-function Mohinhleft() {
+function Mohinhleft({productType}) {
+  const filteredProducts = Listprodutcleft.filter(item => item.type === productType);
   return (
     <>
       <div className='max-sm:hidden mohinh-left'>
@@ -15,7 +16,7 @@ function Mohinhleft() {
         </div>
         <div className="good-products">
           <h1 className='inf-title'>Sản phẩm đánh giá cao</h1>
-          {Listprodutcleft.map((item, index) => {
+          {filteredProducts.map((item, index) => {
             return (
               <ItemLeftProduct key={index} avatar={item.avatar} title={item.title} discount={item.discount} price={item.price} />
             )

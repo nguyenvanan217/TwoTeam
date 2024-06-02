@@ -1,0 +1,148 @@
+.container1 {
+    width: 1320px;
+    height: 1600px;
+    background-color: #F4F4F4;
+    margin: 30px auto 30px auto;
+}
+
+.cotainer-banner {
+    background-image: url('../../assets/bannerlh.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cotainer-banner img {
+    height: 350px;
+    width: 100%;
+    position: relative;
+}
+
+.main-contents {
+    position: absolute;
+    top: 350px;
+    display: flex;
+    width: 81%;
+}
+
+.contents-left-top {
+    margin: 20px 20px 20px 20px;
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffff;
+}
+
+.name {
+    padding-top: 33px;
+}
+
+.contents-left-top img {
+    width: 90%;
+    height: 0%;
+    object-fit: cover;
+    margin: 35px;
+}
+
+.contents-right-top {
+    margin: 20px 20px 20px 20px;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffff;
+}
+
+.contents-right-top strong {
+    margin: 0px 20px -10px 20px;
+    color: #101010;
+}
+
+.contents-right-top input[type="text"],
+input[type="tel"] {
+    width: 90%;
+    height: 40px;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    border: 1px solid #970000;
+    outline: none;
+    box-shadow: 0 1.5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.contents-right-top textarea {
+    width: 90%;
+    height: 100px;
+    margin: 20px 20px 20px 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contents-right-top input[type="checkbox"] {
+    margin: 20px 0px 20px 20px;
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.finish {
+    background-color: #970000;
+    color: #ffff;
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 460px;
+    font-weight: bold;
+}
+
+.contents-btt {
+    margin-top: 810px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+}
+
+.contents-left-btt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 45%;
+    height: 350px;
+    background-color: #ffff;
+}
+
+.contents-left-btt img {
+    width: 60px;
+    height: 63px;
+}
+
+.contents-right-btt {
+    width: 45%;
+    height: 350px;
+    gap: 20px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents-right-btt img {
+    width: 60px;
+    height: 63px;
+}
+
+.contact,
+.num {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFf;
+    background-color: #970000;
+    width: 200px;
+    height: 40px;
+}

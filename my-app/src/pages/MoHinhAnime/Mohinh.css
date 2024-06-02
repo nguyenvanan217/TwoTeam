@@ -5,7 +5,9 @@
     gap: 30px;
     margin-bottom: 30px;
 }
-
+strong {
+    color: #d41212;
+}
 h2 {
     font-size: 16px;
 }
