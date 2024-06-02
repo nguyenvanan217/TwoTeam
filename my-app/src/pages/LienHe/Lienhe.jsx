@@ -4,6 +4,7 @@ import leftlh from '../../assets/leftlh.jpg'
 import lh1 from '../../assets/lh1.png'
 import lh2 from '../../assets/lh2.png'
 import Navbar from '../../components/header/Navbar'
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton'
 import Footer from '../../components/footer/footer'
 import './Lienhe.css'
 function Lienhe() {
@@ -49,6 +50,7 @@ function Lienhe() {
                     </div>
                 </div>
             </div>
+            <ScrollToTopButton />
             <Footer />
         </>
     )

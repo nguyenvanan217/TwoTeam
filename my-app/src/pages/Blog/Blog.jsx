@@ -4,6 +4,7 @@ import { Link, NavLink } from "react-router-dom";
 import BlogItem from './Blogitems'
 import ListBlog from '../../components/Categories/db/db_blog'
 import Navbar from '../../components/header/Navbar'
+import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 import Footer from '../../components/footer/footer'
 import './Blog.css'
 function Blog() {
@@ -34,6 +35,7 @@ function Blog() {
                     </ul>
                 </div>
             </div>
+            <ScrollToTopButton />
             <Footer />
         </>
     )

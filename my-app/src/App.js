@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div className="App">
-            {/* {loading && (
+            {loading && (
                 <div className="saringan">
                     <div class="sharingon">
                         <div class="ring">
@@ -38,7 +38,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            )} */}
+            )}
             <Routes>
                 <Route path='/' element={<TrangChu />} />
                 <Route path='/mohinhanime' element={<Mohinh />} />
