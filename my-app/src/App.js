@@ -10,7 +10,7 @@ import Tranhcanva from './pages/TranhCanva/Tranhcanva';
 import Mohinh from './pages/MoHinhAnime/Mohinh'
 import Vaidecor from './pages/VaiDecor/Vaidecor';
 import Chitiet from './pages/ChiTiet/Chitiet';
-
+import Them_MuaSP from './pages/Them_MuaSP/Them_MuaSP';
 function App() {
     const [loading, setLoading] = useState(false);
     const location = useLocation();
@@ -27,7 +27,7 @@ function App() {
 
     return (
         <div className="App">
-            {loading && (
+            {/* {loading && (
                 <div className="saringan">
                     <div class="sharingon">
                         <div class="ring">
@@ -38,7 +38,7 @@ function App() {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
             <Routes>
                 <Route path='/' element={<TrangChu />} />
                 <Route path='/mohinhanime' element={<Mohinh />} />
@@ -47,6 +47,7 @@ function App() {
                 <Route path='/blog' element={<Blog />} />
                 <Route path='/lienhe' element={<Lienhe />} />
                 <Route path='/chitiet/:id' element={<Chitiet />} />
+                <Route path='/them_muasp' element={<Them_MuaSP />} />
             </Routes>
         </div>
     );

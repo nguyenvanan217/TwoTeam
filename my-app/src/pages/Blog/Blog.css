@@ -1,9 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .menu {
     background-color: #E6E6EA;
     display: flex;
@@ -13,9 +7,11 @@
     width: 100%;
     height: 60px;
 }
+
 .menu a {
     font-weight: bold;
 }
+
 .BLOG {
     text-align: center;
     font-weight: bold;

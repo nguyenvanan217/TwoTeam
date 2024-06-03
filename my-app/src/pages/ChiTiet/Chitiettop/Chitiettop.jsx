@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../Chitiettop/Chitiettop.css';
 import { useParams } from 'react-router-dom';
 import { db_product } from '../../../components/Categories/db/db_product';
@@ -73,7 +73,7 @@ function Chitiettop() {
                                 <button onClick={handleIncrease}>+</button>
                                 <button onClick={handleReduce}>-</button>
                             </div>
-                            <button className='add-card'>Thêm Vào Giỏ Hàng</button>
+                            <Link to= "/them_muasp" ><button className='add-card'>Thêm Vào Giỏ Hàng</button></Link>
                         </div>
                         <button className='buynow' onClick={handleShowBuyNow}>Mua Ngay
                             <br />Gọi điện xác nhận và giao hàng tận nơi
