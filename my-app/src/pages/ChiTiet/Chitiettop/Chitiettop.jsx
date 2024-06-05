@@ -73,7 +73,7 @@ function Chitiettop() {
                                 <button onClick={handleIncrease}>+</button>
                                 <button onClick={handleReduce}>-</button>
                             </div>
-                            <Link to= "/them_muasp" ><button className='add-card'>Thêm Vào Giỏ Hàng</button></Link>
+                            <Link to={{pathname: `/them_muasp/${id}`}}><button className='add-card'>Thêm Vào Giỏ Hàng </button></Link>
                         </div>
                         <button className='buynow' onClick={handleShowBuyNow}>Mua Ngay
                             <br />Gọi điện xác nhận và giao hàng tận nơi

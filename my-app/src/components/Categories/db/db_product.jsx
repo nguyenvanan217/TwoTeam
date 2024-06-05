@@ -303,7 +303,7 @@ export const db_product = [
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_and_law,
         title: 'Combo 2 Tranh Treo Tường Anime Luffy Vs Law',
         discount: '400.000',
-        price: '495.000',
+        price: '530.000',
     },
     {
         id: 26,
@@ -311,7 +311,7 @@ export const db_product = [
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_and_ace,
         title: 'Combo 2 tranh treo tường anime luffy vs ace',
         discount: '400.000',
-        price: '495.000',
+        price: '335.000',
     },
     {
         id: 27,
@@ -319,7 +319,7 @@ export const db_product = [
         avatar: imgTranhCanva.tranh_treo_tuong_luffy_wano,
         title: 'Tranh treo tường luffy',
         discount: '400.000',
-        price: '495.000',
+        price: '895.000',
     },
     {
         id: 28,
@@ -327,7 +327,7 @@ export const db_product = [
         avatar: imgTranhCanva.tranh_treo_tuong_zoro,
         title: 'Combo 2 Tranh Treo Tường Anime Zoro',
         discount: '400.000',
-        price: '495.000',
+        price: '190.000',
     },
     {
         id: 29,
@@ -335,7 +335,7 @@ export const db_product = [
         avatar: imgTranhCanva.tranh_treo_tuong_doffy,
         title: 'Combo 2 Tranh Treo Tường Dofflamingo Vs Rosinante',
         discount: '400.000',
-        price: '495.000',
+        price: '200.000',
     },
     {
         id: 30,

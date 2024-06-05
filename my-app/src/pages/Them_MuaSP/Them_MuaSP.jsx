@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { FaCheck } from "react-icons/fa";
 import { FaFaceGrinHearts } from "react-icons/fa6";
 import { RxCaretRight } from "react-icons/rx";
+import { useParams } from 'react-router-dom';
 import Navbar from '../../components/header/Navbar';
 import ScrollToTopButton from '../../components/ScrollToTopButton/ScrollToTopButton';
 import Footer from '../../components/footer/footer';
+import { db_product } from '../../components/Categories/db/db_product';
 import './Them_MuaSP.css'
 function Them_MuaSP() {
+    //lấy đúng sản phẩm qua id đã đặt link
+    const { id } = useParams();
+    const product = db_product.find(item => item.id === Number(id));
+    console.log(id);
     return (
         <div>
             <Navbar />
@@ -36,17 +42,16 @@ function Them_MuaSP() {
                     <div className="box-right">
                         <h1><strong>ĐƠN HÀNG CỦA BẠN</strong></h1>
                         <div className="bill-product">
-                            <h2><strong>
-                                SẢN PHẨM</strong></h2>
+                            <h2><strong>SẢN PHẨM</strong></h2>
                             <h2><strong>TẠM TÍNH</strong></h2>
                         </div>
                         <div className="name-product">
-                            <strong>Mô hình doflamingo <span>x 2</span></strong>
-                            <strong>2.000.000 <sup>đ</sup></strong>
+                            <strong>{product && product.title} / Số lượng: <span>...</span></strong>
+                            <strong>{product && product.price} <sup>đ</sup></strong>
                         </div>
                         <div className="sum-price">
                             <strong>Tổng</strong>
-                            <strong>2.000.000 <sup>đ</sup></strong>
+                            <strong>470.000<sup>đ</sup></strong>
                         </div>
                         <div className="check-product">
                             <div className="check-top">

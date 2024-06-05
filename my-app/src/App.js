@@ -47,7 +47,7 @@ function App() {
                 <Route path='/blog' element={<Blog />} />
                 <Route path='/lienhe' element={<Lienhe />} />
                 <Route path='/chitiet/:id' element={<Chitiet />} />
-                <Route path='/them_muasp' element={<Them_MuaSP />} />
+                <Route path='/them_muasp/:id' element={<Them_MuaSP />} />
             </Routes>
         </div>
     );
